@@ -30,7 +30,7 @@ EditorBuildSettings:
     path: Assets/Scene/Game/Game.unity
     guid: 254cd0f0016eea64287eb8aa42ae2d64
   - enabled: 1
-    path: Assets/Scene/Game/QuestionsScene.unity
+    path: Assets/Scene/Game/0_QuestionsScene (HTP).unity
     guid: 4f81df6e286b2174293098c92861bffe
   - enabled: 1
     path: Assets/Scene/Game/Fire on Board.unity
