@@ -45,10 +45,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 182755402ea6e2446bb98cd97a474eaa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectiveList: []
+  ObjectiveNotification: {fileID: 7809599322005026974}
+  window: {fileID: 7959172845899526850}
   popupText: {fileID: 5514481620993882267}
-  objectiveText: {fileID: 0}
-  window: {fileID: 763033131838251802}
+  objectiveList: []
+  texts: []
   clipPressed: 0
 --- !u!1 &2679727714808082925
 GameObject:
