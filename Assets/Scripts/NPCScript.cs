@@ -44,7 +44,7 @@ public class NPCScript : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     void finishedTask()
     {
         finished++;
-        Debug.Log("text has been hidden: " + finished);
+        //Debug.Log("text has been hidden: " + finished);
     }
     private void OnTriggerEnter(Collider other)
     {
@@ -57,7 +57,10 @@ public class NPCScript : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
         objectiveText2.SetActive(true);
     }
 
-
+    private void OnTriggerExit(Collider other)
+    {
+        talkButton.SetActive(false);
+    }
     void IPointerDownHandler.OnPointerDown(PointerEventData eventData)
     {
         talkPressed = true;
