@@ -668,15 +668,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: f45ab920eb09e694cbd4d678f4c169a6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 701.8908
+      value: 183.1836
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f45ab920eb09e694cbd4d678f4c169a6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.034284
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f45ab920eb09e694cbd4d678f4c169a6, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 798.1626
+      value: 125
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f45ab920eb09e694cbd4d678f4c169a6, type: 3}
       propertyPath: m_LocalRotation.w
@@ -711,7 +711,9 @@ PrefabInstance:
       value: testing airbus
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 65702495048144492, guid: f45ab920eb09e694cbd4d678f4c169a6, type: 3}
+    - {fileID: -8700617353114198275, guid: f45ab920eb09e694cbd4d678f4c169a6, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f45ab920eb09e694cbd4d678f4c169a6, type: 3}
