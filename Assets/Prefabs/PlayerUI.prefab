@@ -1661,6 +1661,7 @@ GameObject:
   - component: {fileID: 6846512946709842287}
   - component: {fileID: 5432037804469212490}
   - component: {fileID: 2250238529514589500}
+  - component: {fileID: 3737478540710856996}
   m_Layer: 5
   m_Name: Clipboard
   m_TagString: Untagged
@@ -1725,6 +1726,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &3737478540710856996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7507833022584045724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e48bf00ae6d8e8f4bbb080295f74f9bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Pressed: 0
 --- !u!1 &7677441606330519397
 GameObject:
   m_ObjectHideFlags: 0
