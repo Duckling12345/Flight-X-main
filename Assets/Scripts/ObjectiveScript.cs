@@ -13,7 +13,7 @@ public class ObjectiveScript : MonoBehaviour
     public int sceneBuildIndex;
     private int objectivesDone = 0;
 
-
+ 
     private void Start()
     {
         foreach(Transform t in transform)
