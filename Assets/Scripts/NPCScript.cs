@@ -38,13 +38,13 @@ public class NPCScript : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
         if (talkPressed)
         {
             ConversationManager.Instance.StartConversation(myConversation);
-            obstacle.GetComponent<BoxCollider>().enabled = false;
             RemoveText();
         }
     }
 
    void RemoveText()
     {
+        obstacle.GetComponent<BoxCollider>().enabled = false;
         objectiveText.SetActive(false);
     }
 
@@ -63,6 +63,8 @@ public class NPCScript : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     private void OnTriggerExit(Collider other)
     {
         talkButton.SetActive(false);
+        ConversationManager.Instance.EndConversation();
+        //temporary fix
     }
 
 
