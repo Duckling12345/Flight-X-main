@@ -315,6 +315,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1536616551447513895, guid: 50cce52fd0c43ca4f98b077798e69fa1, type: 3}
+      propertyPath: _NPCScript
+      value: 
+      objectReference: {fileID: 990037447}
+    - target: {fileID: 1536616551447513895, guid: 50cce52fd0c43ca4f98b077798e69fa1, type: 3}
       propertyPath: _PopupWindow
       value: 
       objectReference: {fileID: 460235394}
@@ -446,6 +450,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 01620132a790166458769369157fdc32, type: 3}
+--- !u!114 &990037447 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3441916060356009427, guid: 01620132a790166458769369157fdc32, type: 3}
+  m_PrefabInstance: {fileID: 990037446}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95cebd414df40a54e9a4703bcee4bdef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1150969833 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4839202560351081131, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
