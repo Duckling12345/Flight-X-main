@@ -82267,13 +82267,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: PopUpWindow
       objectReference: {fileID: 0}
+    - target: {fileID: 778530529953377797, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -1.9
+      objectReference: {fileID: 0}
     - target: {fileID: 2250847608551123682, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
       propertyPath: m_SizeDelta.x
       value: 302.12
       objectReference: {fileID: 0}
     - target: {fileID: 2250847608551123682, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 22.0613
+      value: -1.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2679727714808082925, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4839202560351081131, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
       propertyPath: m_fontSize
@@ -82305,15 +82313,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5312287196016061105, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
       propertyPath: objectiveList.Array.data[0].Object
-      value: Talk to Annie
+      value: '- Talk to Annie'
       objectReference: {fileID: 0}
     - target: {fileID: 5312287196016061105, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
       propertyPath: objectiveList.Array.data[1].Object
-      value: Interact with the Chairs
+      value: '- Interact with the Chairs'
       objectReference: {fileID: 0}
     - target: {fileID: 5312287196016061105, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
       propertyPath: objectiveList.Array.data[2].Object
-      value: Close the doors
+      value: '- Close the doors'
       objectReference: {fileID: 0}
     - target: {fileID: 5514481620993882267, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
       propertyPath: m_text
@@ -82358,6 +82366,14 @@ PrefabInstance:
     - target: {fileID: 5730837884929972500, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6076027503749943484, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115571081633994796, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -1.8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
