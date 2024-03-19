@@ -7,6 +7,7 @@ using Unity.PlasticSCM.Editor.WebApi;
 using Palmmedia.ReportGenerator.Core;
 using System.Linq;
 using UnityEngine.UI;
+using TMPro;
 
 public class NPCScript : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 {
@@ -14,13 +15,12 @@ public class NPCScript : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     public bool talkPressed;
     public GameObject talkButton;
     private PopupWindow popupWindow;
-    private ObjectiveScript objectiveScript;
+    public GameObject objectiveText;
     public GameObject objectiveText1;
     public GameObject objectiveText2;
+    public GameObject obstacle;
 
 
-    [HideInInspector]
-    public int finished;
 
     void Start()
     {
@@ -38,14 +38,17 @@ public class NPCScript : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
         if (talkPressed)
         {
             ConversationManager.Instance.StartConversation(myConversation);
-            finishedTask();
+            obstacle.GetComponent<BoxCollider>().enabled = false;
+            RemoveText();
         }
     }
-    void finishedTask()
+
+   void RemoveText()
     {
-        finished++;
-        //Debug.Log("text has been hidden: " + finished);
+        objectiveText.SetActive(false);
     }
+
+
     private void OnTriggerEnter(Collider other)
     {
         talkButton.SetActive(true);
@@ -61,6 +64,8 @@ public class NPCScript : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     {
         talkButton.SetActive(false);
     }
+
+
     void IPointerDownHandler.OnPointerDown(PointerEventData eventData)
     {
         talkPressed = true;

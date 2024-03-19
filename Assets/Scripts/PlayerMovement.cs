@@ -13,6 +13,9 @@ public class PlayerMovement : MonoBehaviour
     public float InteractRange;
     public bool Pressed;
 
+    //private float _gravity = -9.81f;
+   // [SerializeField] private float gravityMultiplier = 3.04f;
+   // private float _velocity;
  
     private void Start()
     {
@@ -21,6 +24,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void Update()
     {
+        //Gravity();
         Vector3 Move = transform.right * joystick.Horizontal + transform.forward * joystick.Vertical;
         controller.Move(Move * SpeedMove*Time.deltaTime);
         
@@ -36,6 +40,20 @@ public class PlayerMovement : MonoBehaviour
             }
         }
     }
+
+   /** private void Gravity()
+    {
+        if (controller.isGrounded)
+        {
+            _velocity = -1.0f;
+        }
+        else
+        {
+            _velocity += _gravity * gravityMultiplier * Time.deltaTime;
+
+        }
+    }
+   **/
 
 
 }

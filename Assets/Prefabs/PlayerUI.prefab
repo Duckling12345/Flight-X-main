@@ -939,7 +939,7 @@ GameObject:
   - component: {fileID: 1536616551447513895}
   m_Layer: 0
   m_Name: Capsule
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1046,7 +1046,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   joystick: {fileID: 2656389120205306096}
-  SpeedMove: 5
+  SpeedMove: 90
   controller: {fileID: 1425639322501469059}
   InteractorSource: {fileID: 6512883986247736849}
   InteractRange: 2
