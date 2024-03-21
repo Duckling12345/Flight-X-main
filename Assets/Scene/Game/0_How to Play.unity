@@ -868,7 +868,7 @@ MonoBehaviour:
   myConversation: {fileID: 1622528154}
   talkPressed: 0
   talkButton: {fileID: 1215724143}
-  objectiveText: {fileID: 1148329880}
+  objectiveText: {fileID: 1348429643}
   objectiveText1: {fileID: 452357587}
   objectiveText2: {fileID: 384229296}
   obstacle: {fileID: 5233112405622865500}
@@ -10699,11 +10699,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 7298030742212169054, guid: 32188e4d73be93240b4895385cb19d22, type: 3}
---- !u!1 &1148329880 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3833357504373239160, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
-  m_PrefabInstance: {fileID: 8315565336048430138}
-  m_PrefabAsset: {fileID: 0}
 --- !u!64 &1150030008
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -12925,7 +12920,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4839202560351081131, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
   m_PrefabInstance: {fileID: 8315565336048430138}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1148329880}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
