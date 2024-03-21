@@ -15,7 +15,7 @@ public class NPCScript : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     public bool talkPressed;
     public GameObject talkButton;
     private PopupWindow popupWindow;
-    public GameObject objectiveText;
+    public TMP_Text objectiveText;
     public GameObject objectiveText1;
     public GameObject objectiveText2;
     public GameObject obstacle;
@@ -45,7 +45,7 @@ public class NPCScript : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
    void RemoveText()
     {
         obstacle.GetComponent<BoxCollider>().enabled = false;
-        objectiveText.SetActive(false);
+        objectiveText.color = new Color32(0xC0, 0xC0, 0xC0, 0xFF);
     }
 
 
