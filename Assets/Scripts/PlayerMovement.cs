@@ -2,7 +2,6 @@ using JetBrains.Annotations;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
-
 public class PlayerMovement : MonoBehaviour
 {
     public FixedJoystick joystick;
@@ -23,12 +22,13 @@ public class PlayerMovement : MonoBehaviour
     public bool Opening;
     public Animator Animation;
 
+    // Reference to the CameraShake script
+    public CameraShake cameraShake;
 
     private void Start()
     {
         controller = GetComponent<CharacterController>();
         Opening = false;
-
     }
 
     public void Update()
@@ -39,10 +39,10 @@ public class PlayerMovement : MonoBehaviour
         {
             velocity.y = -2f;
         }
-        
+
         Vector3 Move = transform.right * joystick.Horizontal + transform.forward * joystick.Vertical;
-        controller.Move(Move * SpeedMove*Time.deltaTime);
-        
+        controller.Move(Move * SpeedMove * Time.deltaTime);
+
         if (Pressed)
         {
             Ray r = new Ray(InteractorSource.position, InteractorSource.forward);
@@ -50,7 +50,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 if (hitInfo.collider.gameObject.TryGetComponent(out IInteractable interactObj))
                 {
-                    interactObj.Interact();  
+                    interactObj.Interact();
                 }
             }
 
@@ -71,14 +71,11 @@ public class PlayerMovement : MonoBehaviour
                     }
                 }
             }
-
-
         }
 
         velocity.y += Gravity * Time.deltaTime;
         controller.Move(velocity * Time.deltaTime);
     }
-
 
     public void OpenTime()
     {
@@ -86,4 +83,21 @@ public class PlayerMovement : MonoBehaviour
         doorScript.Open = true;
     }
 
+    // Triggered when player collides with a trigger collider
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Cube"))
+        {
+            Debug.Log("Player collided with cube!");
+            // Trigger camera shake
+            if (cameraShake != null)
+            {
+                cameraShake.Shake();
+            }
+            else
+            {
+                Debug.LogError("CameraShake reference is not set!");
+            }
+        }
+    }
 }
