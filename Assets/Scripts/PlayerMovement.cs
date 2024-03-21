@@ -18,13 +18,17 @@ public class PlayerMovement : MonoBehaviour
     public Transform Ground;
     public LayerMask layermask;
     Vector3 velocity;
-
+    public DoorScript doorScript;
     public bool isGround;
-   
- 
+    public bool Opening;
+    public Animator Animation;
+
+
     private void Start()
     {
         controller = GetComponent<CharacterController>();
+        Opening = false;
+
     }
 
     public void Update()
@@ -49,6 +53,26 @@ public class PlayerMovement : MonoBehaviour
                     interactObj.Interact();  
                 }
             }
+
+            if (Physics.Raycast(InteractorSource.position, InteractorSource.forward, out hitInfo, InteractRange))
+            {
+                if (hitInfo.transform.tag == "Door")
+                {
+                    doorScript = hitInfo.transform.GetComponent<DoorScript>();
+                    if (doorScript.Close)
+                    {
+                        if (Pressed)
+                        {
+                            OpenTime();
+                            Debug.Log("napindot");
+                            Opening = true;
+                            Animation.SetBool("Opening", Opening);
+                        }
+                    }
+                }
+            }
+
+
         }
 
         velocity.y += Gravity * Time.deltaTime;
@@ -56,6 +80,10 @@ public class PlayerMovement : MonoBehaviour
     }
 
 
-
+    public void OpenTime()
+    {
+        doorScript.Close = false;
+        doorScript.Open = true;
+    }
 
 }

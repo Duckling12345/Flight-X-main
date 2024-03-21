@@ -31,6 +31,11 @@ public class ObjectiveActivator : MonoBehaviour
             InteractButton.SetActive(true);
         }
     }
+
+
+
+
+
     private void OnTriggerExit(Collider other)
     {
         Debug.Log("Player Exited");

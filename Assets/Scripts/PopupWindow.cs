@@ -36,7 +36,7 @@ public class PopupWindow : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
         switch (scene.buildIndex)
         {
             case 6:
-                ShowPopup("How to Play");
+                ShowPopup("How to Play | Objectives");
                 break;
 
             case 8:
@@ -69,7 +69,7 @@ public class PopupWindow : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     {
         if (clipPressed && scene.buildIndex == 6)
         {
-            ShowPopup("Board the Plane");
+            ShowPopup("How to Play | Objectives");
         }
         else if (clipPressed)
         {

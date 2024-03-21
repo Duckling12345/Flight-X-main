@@ -6,15 +6,14 @@ using UnityEngine.SceneManagement;
 public class ObjectiveScript : MonoBehaviour
 {
     private List<Transform> objectives = new List<Transform>();
-
     public Material activeObjectives;
     public Material inactiveObjectives;
     public Material finalObjectives;
     public int sceneBuildIndex;
     private int objectivesDone = 0;
 
-    private UnlockDoor unlockDoor;
- 
+
+   
     private void Start()
     {
         foreach(Transform t in transform)
@@ -27,8 +26,7 @@ public class ObjectiveScript : MonoBehaviour
             Debug.Log("No objectives at this level please add ty");
             return;
         }
-
-        //Activate Objective    
+    
         objectives[objectivesDone].GetComponent<MeshRenderer>().material = activeObjectives;
         objectives[objectivesDone].GetComponent<ObjectiveActivator>().ActivateObjective();
     }

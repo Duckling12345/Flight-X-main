@@ -60,11 +60,13 @@ public class NPCScript : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
         objectiveText2.SetActive(true);
     }
 
+    //temporary fix
     private void OnTriggerExit(Collider other)
     {
+        this.GetComponent<BoxCollider>().enabled = false;
         talkButton.SetActive(false);
         ConversationManager.Instance.EndConversation();
-        //temporary fix
+
     }
 
 

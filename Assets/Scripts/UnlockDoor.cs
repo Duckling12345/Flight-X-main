@@ -1,46 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class UnlockDoor : MonoBehaviour
 {
-    public Transform fpsCamera;
-    RaycastHit hit;
-    public float Range = 3f;
-    public DoorScript doorScript;
-    public Animator Animation;
-    public bool Opened;
-    public bool Closed;
-    public bool Pressed;
+    public int sceneBuildIndex;
 
-    private void Update()
+   public void MoveScene()
     {
-            if(Physics.Raycast(fpsCamera.position, fpsCamera.forward, out hit, Range))
-        {
-            if(hit.transform.tag == "Door")
-            {
-                doorScript = hit.transform.GetComponent<DoorScript>();
-                if(doorScript != null)
-                {
-                    if (doorScript.Close)
-                    {
-                        if(Pressed)
-                        {
-                            Animation.SetBool("Opening", true);
-                            Invoke("OpenTime", 0.30f);
-                        }
-                    }
-                }
-            }
-        }
+        SceneManager.LoadScene(sceneBuildIndex, LoadSceneMode.Single);
     }
-
-    public void OpenTime()
-    {
-        doorScript.Close = false;
-        doorScript.Open = true;
-    }
-
-
+   
 
 }

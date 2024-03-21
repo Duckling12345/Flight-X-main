@@ -14,8 +14,7 @@ public class TouchController : MonoBehaviour
     public  PopupWindow _PopupWindow;
     public FixedTalkButton _FixedTalkButton;
     public NPCScript _NPCScript;
-    public UnlockDoor _UnlockDoor;
-
+ 
     void Start()
     {
         
@@ -29,6 +28,5 @@ public class TouchController : MonoBehaviour
         _PauseMenu.buttonPressed = _PauseFixedButton.Pressed;
         _PopupWindow.clipPressed = _FixedClipboardButton.Pressed; 
         _NPCScript.talkPressed = _FixedTalkButton.Pressed;
-        _UnlockDoor.Pressed = _FixedButton.Pressed;
     }
 }
