@@ -13,6 +13,14 @@ public class PlayerMovement : MonoBehaviour
     public float InteractRange;
     public bool Pressed;
 
+    private float Gravity = -9.81f;
+    public float groundDistance = 0.3f;
+    public Transform Ground;
+    public LayerMask layermask;
+    Vector3 velocity;
+
+    public bool isGround;
+   
  
     private void Start()
     {
@@ -21,6 +29,13 @@ public class PlayerMovement : MonoBehaviour
 
     public void Update()
     {
+        isGround = Physics.CheckSphere(Ground.position, groundDistance, layermask);
+
+        if (isGround && velocity.y < 0)
+        {
+            velocity.y = -2f;
+        }
+        
         Vector3 Move = transform.right * joystick.Horizontal + transform.forward * joystick.Vertical;
         controller.Move(Move * SpeedMove*Time.deltaTime);
         
@@ -35,7 +50,12 @@ public class PlayerMovement : MonoBehaviour
                 }
             }
         }
+
+        velocity.y += Gravity * Time.deltaTime;
+        controller.Move(velocity * Time.deltaTime);
     }
+
+
 
 
 }

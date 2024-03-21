@@ -26,7 +26,7 @@ public class ObjectiveActivator : MonoBehaviour
 
         if (ObjectiveActive)
         {
-            Debug.Log("Player Entrered");
+            Debug.Log("Player Entrered the collider");
             objectiveScript.nextObjective();
             InteractButton.SetActive(true);
         }

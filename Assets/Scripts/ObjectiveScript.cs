@@ -13,7 +13,8 @@ public class ObjectiveScript : MonoBehaviour
     public int sceneBuildIndex;
     private int objectivesDone = 0;
 
-
+    private UnlockDoor unlockDoor;
+ 
     private void Start()
     {
         foreach(Transform t in transform)
@@ -37,15 +38,18 @@ public class ObjectiveScript : MonoBehaviour
         objectivesDone++;
 
         Debug.Log("Objectives finished: " + objectivesDone);
-        Debug.Log("Objectives remaining: " + objectives.Count); 
+        Debug.Log("Objectives remaining: " + objectives.Count);
 
         //final objective code
-        if (objectivesDone == objectives.Count) {
-            Debug.Log("Level Complete!");
-            Victory();
-            return;
-        }
+      
 
+            if (objectivesDone == objectives.Count)
+            {
+                Debug.Log("Level Complete!");
+                Victory();
+                return;
+            }
+        
         if (objectivesDone == objectives.Count - 1) {  
         
             objectives[objectivesDone].GetComponent<MeshRenderer>().material = finalObjectives;
@@ -58,7 +62,7 @@ public class ObjectiveScript : MonoBehaviour
     }
     private void Victory()
     {
-        SceneManager.LoadScene(sceneBuildIndex, LoadSceneMode.Single);
+       // SceneManager.LoadScene(sceneBuildIndex, LoadSceneMode.Single);
         Debug.Log("Proceed to next level");
     }
 }
