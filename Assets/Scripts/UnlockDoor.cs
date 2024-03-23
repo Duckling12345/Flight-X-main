@@ -6,12 +6,22 @@ using UnityEngine.SceneManagement;
 
 public class UnlockDoor : MonoBehaviour
 {
-    public int sceneBuildIndex;
+    public static UnlockDoor instance;
+    [SerializeField] Animator transitionAnim;
 
-   public void MoveScene()
+    public void NextLevel()
     {
-        SceneManager.LoadScene(sceneBuildIndex, LoadSceneMode.Single);
+        StartCoroutine(LoadLevel());
     }
+
+    IEnumerator LoadLevel()
+    {
+        transitionAnim.SetTrigger("End");
+        yield return new WaitForSeconds(1);
+        SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1);
+        transitionAnim.SetTrigger("Start");
+    }
+}
    
 
-}
+

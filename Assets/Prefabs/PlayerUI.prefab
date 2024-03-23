@@ -1069,7 +1069,6 @@ GameObject:
   - component: {fileID: 7763165374666150733}
   - component: {fileID: 1425639322501469059}
   - component: {fileID: 1536616551447513895}
-  - component: {fileID: 1858347713852580800}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Player
@@ -1193,6 +1192,7 @@ MonoBehaviour:
   isGround: 0
   Opening: 0
   Animation: {fileID: 0}
+  cameraShake: {fileID: 0}
 --- !u!143 &1425639322501469059
 CharacterController:
   m_ObjectHideFlags: 0
@@ -1241,28 +1241,6 @@ MonoBehaviour:
   _PopupWindow: {fileID: 0}
   _FixedTalkButton: {fileID: 0}
   _NPCScript: {fileID: 0}
-  _UnlockDoor: {fileID: 0}
-  _FixedOpenButton: {fileID: 0}
---- !u!114 &1858347713852580800
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4159898159931901597}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 893c6d61f02744e4fb4ee4072415d045, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fpsCamera: {fileID: 0}
-  Range: 3
-  doorScript: {fileID: 0}
-  Animation: {fileID: 0}
-  Opened: 0
-  Closed: 0
-  Pressed: 0
-  Opening: 0
 --- !u!1 &4963417601813398057
 GameObject:
   m_ObjectHideFlags: 0
