@@ -38,6 +38,7 @@ public class NPCScript : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
         if (talkPressed)
         {
             ConversationManager.Instance.StartConversation(myConversation);
+            ShowText();
             RemoveText();
         }
     }
@@ -52,7 +53,6 @@ public class NPCScript : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     private void OnTriggerEnter(Collider other)
     {
         talkButton.SetActive(true);
-        ShowText();
     }
     public void ShowText()
     {
