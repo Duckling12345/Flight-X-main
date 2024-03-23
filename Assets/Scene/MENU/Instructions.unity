@@ -390,8 +390,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Press the action button when near an object or a cabin crew to perform
-    an action.
+  m_text: Press the button when near an object or a cabin crew to perform an action.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f1d02f8523692b4469f589fabf8e281b, type: 2}
   m_sharedMaterial: {fileID: 3358995831323606883, guid: f1d02f8523692b4469f589fabf8e281b, type: 2}
@@ -878,7 +877,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Press the task board to show your objectives of the each scene.
+  m_text: 'Press the objectives board to show the tasks needed to complete in each
+    scene. '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f1d02f8523692b4469f589fabf8e281b, type: 2}
   m_sharedMaterial: {fileID: 3358995831323606883, guid: f1d02f8523692b4469f589fabf8e281b, type: 2}
@@ -1185,7 +1185,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Follow the objectives to complete the level.
+  m_text: Complete the objectives to finish the level.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f1d02f8523692b4469f589fabf8e281b, type: 2}
   m_sharedMaterial: {fileID: 3358995831323606883, guid: f1d02f8523692b4469f589fabf8e281b, type: 2}
@@ -1545,7 +1545,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Use the joystick to move around the area
+  m_text: Use the joystick to move around the area.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f1d02f8523692b4469f589fabf8e281b, type: 2}
   m_sharedMaterial: {fileID: 3358995831323606883, guid: f1d02f8523692b4469f589fabf8e281b, type: 2}
