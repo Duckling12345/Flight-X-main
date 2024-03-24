@@ -472,7 +472,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 3ce91480ef6e6054195d8a8027422794, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7c2e96746e81a6943bfe7eac101c365a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2122,7 +2122,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: WATER LANDING
+  m_text: LEVEL 4
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8b69cb9661d59a440b3bc9e0ff1eab8a, type: 2}
   m_sharedMaterial: {fileID: 5767788990938898048, guid: 8b69cb9661d59a440b3bc9e0ff1eab8a, type: 2}
@@ -2233,8 +2233,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 13.107006, y: -35.27583}
-  m_SizeDelta: {x: 501.2131, y: 397.9957}
+  m_AnchoredPosition: {x: 9.9475, y: -38}
+  m_SizeDelta: {x: 425.8911, y: 366.1108}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &968177369
 MonoBehaviour:
@@ -2256,7 +2256,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 7c2e96746e81a6943bfe7eac101c365a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3ce91480ef6e6054195d8a8027422794, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2826,7 +2826,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: LOSS OF PRESSURIZATION
+  m_text: LEVEL 3
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8b69cb9661d59a440b3bc9e0ff1eab8a, type: 2}
   m_sharedMaterial: {fileID: 5767788990938898048, guid: 8b69cb9661d59a440b3bc9e0ff1eab8a, type: 2}
@@ -2853,8 +2853,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40
-  m_fontSizeBase: 40
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -3252,8 +3252,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -101, y: 176}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: -117, y: 176}
+  m_SizeDelta: {x: 158.3138, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1579353315
 MonoBehaviour:
@@ -3275,9 +3275,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'HOW TO PLAY
-
-'
+  m_text: LEVEL 1
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8b69cb9661d59a440b3bc9e0ff1eab8a, type: 2}
   m_sharedMaterial: {fileID: 5767788990938898048, guid: 8b69cb9661d59a440b3bc9e0ff1eab8a, type: 2}
@@ -3340,7 +3338,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -69.4491, w: 0}
+  m_margin: {x: 0, y: 0, z: 7.212288, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -3699,7 +3697,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: FIRE ONBOARD
+  m_text: LEVEL 2
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8b69cb9661d59a440b3bc9e0ff1eab8a, type: 2}
   m_sharedMaterial: {fileID: 5767788990938898048, guid: 8b69cb9661d59a440b3bc9e0ff1eab8a, type: 2}
@@ -3956,8 +3954,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.173, y: -44.3086}
-  m_SizeDelta: {x: 442.2354, y: 360.1331}
+  m_AnchoredPosition: {x: 19.637, y: -22.9698}
+  m_SizeDelta: {x: 435.73, y: 348.8167}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1811414417
 MonoBehaviour:
@@ -3979,7 +3977,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 99e42fa76862abd42aef8c8ac8d161ea, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f25ed2cf5b41a5342a750c275853819c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
