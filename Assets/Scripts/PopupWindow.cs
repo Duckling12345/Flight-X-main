@@ -36,15 +36,15 @@ public class PopupWindow : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
         switch (scene.buildIndex)
         {
             case 6:
-                ShowPopup("How to Play | Objectives");
+                ShowPopup("Level 1 | Preflight Checking");
                 break;
 
             case 8:
-                ShowPopup("Fire On Board");
+                ShowPopup("Level 2 | Fire On Board");
                 break;
 
             case 10:
-                ShowPopup("Loss of Pressurization");
+                ShowPopup("Level 3 | Loss of Pressurization");
                 break;
 
             default:
@@ -69,7 +69,7 @@ public class PopupWindow : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     {
         if (clipPressed && scene.buildIndex == 6)
         {
-            ShowPopup("How to Play | Objectives");
+            ShowPopup("Level 1 | Preflight Checking");
         }
         else if (clipPressed)
         {
