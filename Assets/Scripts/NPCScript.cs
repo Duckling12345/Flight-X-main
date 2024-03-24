@@ -19,7 +19,7 @@ public class NPCScript : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     public GameObject objectiveText1;
     public GameObject objectiveText2;
     public GameObject obstacle;
-
+    private GameOverManager gameOver;
 
 
     void Start()

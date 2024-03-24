@@ -5,11 +5,12 @@ using TMPro;
 using UnityEngine.SceneManagement;
 
 
-public class FoBManager : MonoBehaviour
+public class GameOverManager : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI timerText;
     [SerializeField] float remainingTime;
-
+    public GameObject GameOverMenu;
+    public GameObject Timer;
     private void Update()
     {
         if(remainingTime  > 0)
@@ -19,6 +20,7 @@ public class FoBManager : MonoBehaviour
         {
             timerText.color = Color.red;
             remainingTime = 0;
+            GameOver();
         }
 
         int minutes = Mathf.FloorToInt(remainingTime / 60);
@@ -28,21 +30,26 @@ public class FoBManager : MonoBehaviour
     }
     void GameOver()
     {
-        //GameOver.setActive(true);
-        //Time.timeScale = 0f;
+        GameOverMenu.SetActive(true);
+        Time.timeScale = 0f;
     }
 
-    void Retry()
+   public void Retry()
     {
         Time.timeScale = 1f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
-    void backToMenu()
+    public void backToMenu()
     {
         Time.timeScale = 1f;
         SceneManager.LoadScene("Level Modules");
 
     }
 
+
+    public void Activator()
+    {
+        Timer.SetActive(true);
+    }
 }
