@@ -16,7 +16,8 @@ public class GameOverManager : MonoBehaviour
         if(remainingTime  > 0)
         {
             remainingTime -= Time.deltaTime;
-        } else if(remainingTime < 0)
+
+        } else if(remainingTime <= 0)
         {
             timerText.color = Color.red;
             remainingTime = 0;

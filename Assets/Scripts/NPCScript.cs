@@ -40,8 +40,11 @@ public class NPCScript : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
             ConversationManager.Instance.StartConversation(myConversation);
             ShowText();
             RemoveText();
+            
         }
     }
+
+
 
    void RemoveText()
     {
@@ -68,7 +71,6 @@ public class NPCScript : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
         ConversationManager.Instance.EndConversation();
 
     }
-
 
     void IPointerDownHandler.OnPointerDown(PointerEventData eventData)
     {
