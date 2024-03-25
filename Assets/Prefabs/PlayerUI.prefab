@@ -1643,6 +1643,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerBody: {fileID: 6512883986247736849}
   LockAxis: {x: 0, y: 0}
+  Sensitivity: 2
 --- !u!1 &7257563965470156994
 GameObject:
   m_ObjectHideFlags: 0
