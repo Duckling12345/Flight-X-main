@@ -10,7 +10,7 @@ public class ObjectiveScript : MonoBehaviour
     public Material inactiveObjectives;
     public Material finalObjectives;
     public int sceneBuildIndex;
-    private int objectivesDone = 0;
+    public int objectivesDone;
 
 
    

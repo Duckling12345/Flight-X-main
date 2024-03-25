@@ -19,7 +19,7 @@ public class NPCScript : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     public GameObject objectiveText1;
     public GameObject objectiveText2;
     public GameObject obstacle;
-
+    private GameOverManager gameOver;
 
 
     void Start()
@@ -40,8 +40,11 @@ public class NPCScript : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
             ConversationManager.Instance.StartConversation(myConversation);
             ShowText();
             RemoveText();
+            
         }
     }
+
+
 
    void RemoveText()
     {
@@ -68,7 +71,6 @@ public class NPCScript : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
         ConversationManager.Instance.EndConversation();
 
     }
-
 
     void IPointerDownHandler.OnPointerDown(PointerEventData eventData)
     {
