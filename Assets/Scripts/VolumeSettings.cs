@@ -14,17 +14,12 @@ public class VolumeSettings : MonoBehaviour
         {
             LoadVolume();
         }
-        else
-        {
-            SetMusicVolume();
-            SetSFXVolume();
-        }
     }
 
     public void SetMusicVolume()
     {
         float volume = musicSlider.value;
-        myMixer.SetFloat("music", Mathf.Log10(volume)*20);
+        myMixer.SetFloat("music", Mathf.Log10(volume) * 20);
         PlayerPrefs.SetFloat("musicVolume", volume);
     }
 
@@ -39,8 +34,5 @@ public class VolumeSettings : MonoBehaviour
     {
         musicSlider.value = PlayerPrefs.GetFloat("musicVolume");
         SFXSlider.value = PlayerPrefs.GetFloat("SFXVolume");
-
-        SetMusicVolume();
-        SetSFXVolume();
     }
 }
