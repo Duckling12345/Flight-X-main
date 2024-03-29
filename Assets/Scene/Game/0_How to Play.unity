@@ -1582,7 +1582,7 @@ PrefabInstance:
       objectReference: {fileID: 8288847800413237732}
     - target: {fileID: 7763165374666150733, guid: 50cce52fd0c43ca4f98b077798e69fa1, type: 3}
       propertyPath: SpeedMove
-      value: 10
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7763165374666150733, guid: 50cce52fd0c43ca4f98b077798e69fa1, type: 3}
       propertyPath: doorScript
