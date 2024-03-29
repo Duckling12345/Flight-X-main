@@ -133,7 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 63708552}
   - component: {fileID: 63708553}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Music Slider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -236,7 +236,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 90407800}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Handle Slide Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -274,7 +274,7 @@ GameObject:
   - component: {fileID: 97931977}
   - component: {fileID: 97931979}
   - component: {fileID: 97931978}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Title
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -408,7 +408,7 @@ GameObject:
   - component: {fileID: 186978615}
   - component: {fileID: 186978617}
   - component: {fileID: 186978616}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -483,7 +483,7 @@ GameObject:
   - component: {fileID: 267123282}
   - component: {fileID: 267123284}
   - component: {fileID: 267123283}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Logo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -559,7 +559,7 @@ GameObject:
   - component: {fileID: 298849005}
   - component: {fileID: 298849004}
   - component: {fileID: 298849003}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Male Symbol
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -676,7 +676,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 321999749}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Fill Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -728,7 +728,7 @@ Transform:
   m_GameObject: {fileID: 466659510}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1174.5933, y: 600.79626, z: 4.6399474}
+  m_LocalPosition: {x: 1920, y: 1080, z: 4.6399474}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -747,7 +747,7 @@ GameObject:
   - component: {fileID: 524690747}
   - component: {fileID: 524690746}
   - component: {fileID: 524690745}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Female Symbol
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -958,7 +958,7 @@ GameObject:
   - component: {fileID: 701585377}
   - component: {fileID: 701585379}
   - component: {fileID: 701585378}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1093,7 +1093,7 @@ GameObject:
   m_Component:
   - component: {fileID: 767181641}
   - component: {fileID: 767181642}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: SFX Slider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1200,7 +1200,7 @@ GameObject:
   - component: {fileID: 793181991}
   - component: {fileID: 793181990}
   - component: {fileID: 793181993}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1327,7 +1327,7 @@ GameObject:
   - component: {fileID: 845705070}
   - component: {fileID: 845705069}
   - component: {fileID: 845705068}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Prev Gender Btn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1458,7 +1458,7 @@ GameObject:
   - component: {fileID: 886769312}
   - component: {fileID: 886769314}
   - component: {fileID: 886769313}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1533,7 +1533,7 @@ GameObject:
   - component: {fileID: 925829200}
   - component: {fileID: 925829202}
   - component: {fileID: 925829201}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1667,7 +1667,7 @@ GameObject:
   - component: {fileID: 999056930}
   - component: {fileID: 999056932}
   - component: {fileID: 999056931}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1787,7 +1787,7 @@ GameObject:
   - component: {fileID: 1087784750}
   - component: {fileID: 1087784749}
   - component: {fileID: 1087784748}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Next Gender Btn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1918,7 +1918,7 @@ GameObject:
   - component: {fileID: 1107709126}
   - component: {fileID: 1107709128}
   - component: {fileID: 1107709127}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2061,7 +2061,7 @@ GameObject:
   - component: {fileID: 1252597100}
   - component: {fileID: 1252597102}
   - component: {fileID: 1252597101}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: BG2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2136,7 +2136,7 @@ GameObject:
   - component: {fileID: 1390326392}
   - component: {fileID: 1390326394}
   - component: {fileID: 1390326393}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Handle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2211,7 +2211,7 @@ GameObject:
   - component: {fileID: 1421806740}
   - component: {fileID: 1421806742}
   - component: {fileID: 1421806741}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2234,8 +2234,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.00055504, y: 0}
-  m_SizeDelta: {x: 2316, y: 1080}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 2500, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1421806741
 MonoBehaviour:
@@ -2286,7 +2286,7 @@ GameObject:
   - component: {fileID: 1512767613}
   - component: {fileID: 1512767615}
   - component: {fileID: 1512767614}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2361,7 +2361,7 @@ GameObject:
   - component: {fileID: 1625162148}
   - component: {fileID: 1625162150}
   - component: {fileID: 1625162149}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Female Page
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2435,7 +2435,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1647493073}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Gender Pages
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2474,7 +2474,7 @@ GameObject:
   - component: {fileID: 1670199345}
   - component: {fileID: 1670199347}
   - component: {fileID: 1670199346}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2549,7 +2549,7 @@ GameObject:
   - component: {fileID: 1682306354}
   - component: {fileID: 1682306356}
   - component: {fileID: 1682306355}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Male Page
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2625,7 +2625,7 @@ GameObject:
   - component: {fileID: 1789230610}
   - component: {fileID: 1789230612}
   - component: {fileID: 1789230611}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Handle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2698,7 +2698,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1822067780}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Handle Slide Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2736,7 +2736,7 @@ GameObject:
   - component: {fileID: 1920562109}
   - component: {fileID: 1920562111}
   - component: {fileID: 1920562110}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Gender Title
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2871,7 +2871,7 @@ GameObject:
   - component: {fileID: 1959670404}
   - component: {fileID: 1959670406}
   - component: {fileID: 1959670405}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3005,7 +3005,7 @@ GameObject:
   - component: {fileID: 2018219514}
   - component: {fileID: 2018219516}
   - component: {fileID: 2018219515}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3083,7 +3083,7 @@ GameObject:
   - component: {fileID: 2051071562}
   - component: {fileID: 2051071561}
   - component: {fileID: 2051071564}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: ScrollView
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3217,7 +3217,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2056837782}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Fill Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3256,7 +3256,7 @@ GameObject:
   - component: {fileID: 2077242882}
   - component: {fileID: 2077242881}
   - component: {fileID: 2077242880}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Close Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}

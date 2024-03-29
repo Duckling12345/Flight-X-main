@@ -18,7 +18,7 @@ public class FireScript : MonoBehaviour
 
     [SerializeField] private ParticleSystem[] fireParticleSystems = new ParticleSystem[0];
 
-    private bool isLit = true;
+    public bool isLit = true;
 
     private void Start()
     {
