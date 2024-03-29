@@ -1,40 +1,67 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class AudioManager : MonoBehaviour
 {
-    [Header("-----Audio Source-----")]
-    [SerializeField] AudioSource musicSource;
-    [SerializeField] AudioSource SFXSource;
+    [Header("Audio Sources")]
+    [SerializeField] private AudioSource musicSource;
+    [SerializeField] private AudioSource sfxSource;
 
-    [Header("-----Audio Clip-----")]
-    public AudioClip background;
-    public AudioClip checkpoint;
-    public AudioClip failed;
+    [Header("Audio Clips")]
+    [SerializeField] private AudioClip backgroundMusic;
+    [SerializeField] private AudioClip checkpointSound;
+    [SerializeField] private AudioClip failedSound;
 
-    public static AudioManager instance;
+    private static AudioManager instance;
+
+    public static AudioManager Instance
+    {
+        get
+        {
+            if (instance == null)
+            {
+                instance = FindObjectOfType<AudioManager>();
+                if (instance == null)
+                {
+                    GameObject obj = new GameObject("AudioManager");
+                    instance = obj.AddComponent<AudioManager>();
+                }
+            }
+            return instance;
+        }
+    }
+
     private void Awake()
     {
-        if (instance == null)
-        {
-            instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else
+        if (instance != null && instance != this)
         {
             Destroy(gameObject);
+            return;
         }
 
-    }
-    private void Start()
-    {
-        musicSource.clip = background;
+        instance = this;
+        DontDestroyOnLoad(gameObject);
+
+        // Initialize audio sources and play background music
+        musicSource.clip = backgroundMusic;
+        musicSource.loop = true;
         musicSource.Play();
     }
 
-    public void PlaySFX(AudioClip clip)
+    public void PlayCheckpointSound()
     {
-        SFXSource.PlayOneShot(clip);
+        PlaySound(checkpointSound, sfxSource);
+    }
+
+    public void PlayFailedSound()
+    {
+        PlaySound(failedSound, sfxSource);
+    }
+
+    private void PlaySound(AudioClip clip, AudioSource source)
+    {
+        if (clip != null && source != null)
+        {
+            source.PlayOneShot(clip);
+        }
     }
 }

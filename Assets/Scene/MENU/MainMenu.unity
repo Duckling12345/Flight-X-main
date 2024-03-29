@@ -1021,10 +1021,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   musicSource: {fileID: 1658730163}
-  SFXSource: {fileID: 1928117716}
-  background: {fileID: 8300000, guid: b46b63b012e07f04a875af511136ed63, type: 3}
-  checkpoint: {fileID: 8300000, guid: 1f6b242484078a84cb5c0dc3884dd126, type: 3}
-  failed: {fileID: 8300000, guid: 1d2b9e45a38510f4fab1a2701c9f1c3b, type: 3}
+  sfxSource: {fileID: 1928117716}
+  backgroundMusic: {fileID: 8300000, guid: b46b63b012e07f04a875af511136ed63, type: 3}
+  checkpointSound: {fileID: 8300000, guid: 1f6b242484078a84cb5c0dc3884dd126, type: 3}
+  failedSound: {fileID: 8300000, guid: 1d2b9e45a38510f4fab1a2701c9f1c3b, type: 3}
 --- !u!4 &1154592855
 Transform:
   m_ObjectHideFlags: 0
