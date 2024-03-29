@@ -25,7 +25,7 @@ public class PlayerMovement : MonoBehaviour
     // Reference to the CameraShake script
     public CameraShake cameraShake;
 
-    private void Start()
+    private void Awake()
     {
         controller = GetComponent<CharacterController>();
         Opening = false;
