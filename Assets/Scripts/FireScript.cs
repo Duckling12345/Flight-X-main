@@ -8,7 +8,7 @@ public class FireScript : MonoBehaviour
     //Create method that detects if fire extinguisher collides destroy gameobject/setactive false
     // wait for seconds load transition
     //play audio when fire is inactive
-    [SerializeField, Range(0f, 1f)] private float currentIntensity = 1.0f;
+    [SerializeField, Range(0f, 1f)] public float currentIntensity = 1.0f;
     public float GetIntensity() => currentIntensity;
 
     private float[] startIntensities = new float[0];
