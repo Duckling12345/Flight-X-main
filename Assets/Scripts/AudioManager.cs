@@ -7,11 +7,15 @@ public class AudioManager : MonoBehaviour
     [SerializeField] private AudioSource musicSource;
     [SerializeField] private AudioSource sfxSource;
 
-    [Header("Audio Clips")]
-    [SerializeField] private AudioClip mainMenuMusic; //from backgroundMusic
-    [SerializeField] private AudioClip levelSelectionMusic; //for level modules
+    [Header("Background Music")]
+    [SerializeField] private AudioClip mainMenuMusic; 
+    [SerializeField] private AudioClip levelSelectionMusic;
+
+    [Header("Sound Effects")]
     [SerializeField] private AudioClip checkpointSound;
     [SerializeField] private AudioClip failedSound;
+    [SerializeField] private AudioClip inspectseatSound;
+    [SerializeField] private AudioClip opendoorSound;
 
     private static AudioManager instance;
 

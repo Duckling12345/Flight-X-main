@@ -1026,6 +1026,8 @@ MonoBehaviour:
   levelSelectionMusic: {fileID: 8300000, guid: cd5d87157ce773d4697882a32bd0e6e4, type: 3}
   checkpointSound: {fileID: 8300000, guid: 1f6b242484078a84cb5c0dc3884dd126, type: 3}
   failedSound: {fileID: 8300000, guid: 1d2b9e45a38510f4fab1a2701c9f1c3b, type: 3}
+  inspectseatSound: {fileID: 8300000, guid: 9b4e74505273a464187342fc1af3a3bc, type: 3}
+  opendoorSound: {fileID: 8300000, guid: cebb413fdfcd5f549a84a4feb07c6e76, type: 3}
 --- !u!4 &1154592855
 Transform:
   m_ObjectHideFlags: 0
