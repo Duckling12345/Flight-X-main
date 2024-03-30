@@ -17,7 +17,7 @@ public class AudioManager : MonoBehaviour
     [SerializeField] private AudioClip inspectseatSound;
     [SerializeField] private AudioClip opendoorSound;
 
-    private static AudioManager instance;
+    static AudioManager instance;
 
     public static AudioManager Instance
     {
@@ -109,7 +109,7 @@ public class AudioManager : MonoBehaviour
         PlaySound(opendoorSound, sfxSource);
     }
 
-    private void PlaySound(AudioClip clip, AudioSource source)
+    public void PlaySound(AudioClip clip, AudioSource source)
     {
         if (clip != null && source != null)
         {
