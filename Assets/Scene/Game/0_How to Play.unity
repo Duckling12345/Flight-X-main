@@ -9842,11 +9842,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 893c6d61f02744e4fb4ee4072415d045, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!95 &892898490 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 857379632816680314, guid: 730e7b62fa8cd1f4f8f2706e82c45a68, type: 3}
-  m_PrefabInstance: {fileID: 1137995167}
-  m_PrefabAsset: {fileID: 0}
 --- !u!64 &897992351
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -26650,7 +26645,7 @@ Transform:
   m_GameObject: {fileID: 5161181382432945008}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071069, y: 2.3283064e-10, z: 2.3283064e-10, w: 0.70710677}
-  m_LocalPosition: {x: 0.04468495, y: 13.51563, z: 0.33491054}
+  m_LocalPosition: {x: 0.09, y: 13.51563, z: 0.44}
   m_LocalScale: {x: 68.23409, y: 69.96628, z: 9.134752}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -29801,6 +29796,7 @@ GameObject:
   - component: {fileID: 49122384}
   - component: {fileID: 49122383}
   - component: {fileID: 919132149090428102}
+  - component: {fileID: 919132149090428103}
   m_Layer: 0
   m_Name: FemaleNPC
   m_TagString: Untagged
@@ -29823,6 +29819,27 @@ MonoBehaviour:
   Level: {fileID: 1044197158}
   Replacement: {fileID: 797929121}
   npc: {fileID: 49122384}
+--- !u!95 &919132149090428103
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919132149090428101}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 240df45280b050742a6485f5030f6ffd, type: 3}
+  m_Controller: {fileID: 9100000, guid: c6355bb33cde6c640bc159897e127439, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &919132149472910813
 GameObject:
   m_ObjectHideFlags: 0
@@ -60190,7 +60207,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bc5ba0781b24234683f4b0f7b77a852, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  transitionAnim: {fileID: 892898490}
 --- !u!1 &5007767762203829556
 GameObject:
   m_ObjectHideFlags: 0
@@ -63979,7 +63995,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bc5ba0781b24234683f4b0f7b77a852, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  transitionAnim: {fileID: 0}
 --- !u!114 &5532807414968636711
 MonoBehaviour:
   m_ObjectHideFlags: 0
