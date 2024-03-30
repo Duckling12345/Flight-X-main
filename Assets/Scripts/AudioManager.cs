@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class AudioManager : MonoBehaviour
 {
@@ -7,7 +8,8 @@ public class AudioManager : MonoBehaviour
     [SerializeField] private AudioSource sfxSource;
 
     [Header("Audio Clips")]
-    [SerializeField] private AudioClip backgroundMusic;
+    [SerializeField] private AudioClip mainMenuMusic; //from backgroundMusic
+    [SerializeField] private AudioClip levelSelectionMusic; //for level modules
     [SerializeField] private AudioClip checkpointSound;
     [SerializeField] private AudioClip failedSound;
 
@@ -41,10 +43,47 @@ public class AudioManager : MonoBehaviour
         instance = this;
         DontDestroyOnLoad(gameObject);
 
-        // Initialize audio sources and play background music
-        musicSource.clip = backgroundMusic;
-        musicSource.loop = true;
-        musicSource.Play();
+        SceneManager.sceneLoaded += OnSceneLoaded; // Subscribe from the sceneLoaded event
+
+    }
+
+    private void OnDestroy()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded; // Unsubscribe from the sceneLoaded event
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        // Determine which background music to play based on the scene name
+        if (scene.name == "MainMenu" || scene.name == "About")
+        {
+            if (!musicSource.isPlaying || musicSource.clip != mainMenuMusic)
+            {
+                PlayBackgroundMusic(mainMenuMusic);
+            }
+        }
+        else if (scene.name == "Level Modules")
+        {
+            musicSource.Stop();
+            if (!musicSource.isPlaying || musicSource.clip != levelSelectionMusic)
+            {
+                PlayBackgroundMusic(levelSelectionMusic);
+            }
+        }
+    }
+
+    private void PlayBackgroundMusic(AudioClip clip)
+    {
+        if (clip != null)
+        {
+            musicSource.clip = clip;
+            musicSource.loop = true;
+            musicSource.Play();
+        }
+        else
+        {
+            Debug.LogWarning("Background music clip is null.");
+        }
     }
 
     public void PlayCheckpointSound()
