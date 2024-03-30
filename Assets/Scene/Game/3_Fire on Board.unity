@@ -56969,6 +56969,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   missingObjective: {fileID: 198335656}
   fixbutton: {fileID: 872840519}
+  active: {fileID: 0}
+  inactive: {fileID: 0}
 --- !u!114 &8331713792647184922
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -69,7 +69,7 @@ public class AudioManager : MonoBehaviour
             {
                 PlayBackgroundMusic(levelSelectionMusic);
             }
-        }
+        } //la pa code for when the music should stop pag pasok ng lvl 1
     }
 
     private void PlayBackgroundMusic(AudioClip clip)
