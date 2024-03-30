@@ -37811,6 +37811,7 @@ GameObject:
   - component: {fileID: 4157820365798656480}
   - component: {fileID: 4157820365798656479}
   - component: {fileID: 4157820365798656481}
+  - component: {fileID: 4157820365798656482}
   m_Layer: 0
   m_Name: male character
   m_TagString: Untagged
@@ -37873,6 +37874,27 @@ MonoBehaviour:
   npc: {fileID: 4157820365798656479}
   gameOver: {fileID: 1054514439}
   Level: {fileID: 1304250767}
+--- !u!95 &4157820365798656482
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4157820365798656478}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: bce9ddf1082e08049b69c49d3f5793c1, type: 3}
+  m_Controller: {fileID: 9100000, guid: 85870ecc8fb5dec44bfcafc57e969997, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!33 &4158775871039606653
 MeshFilter:
   m_ObjectHideFlags: 0
