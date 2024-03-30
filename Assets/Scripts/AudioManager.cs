@@ -99,6 +99,15 @@ public class AudioManager : MonoBehaviour
     {
         PlaySound(failedSound, sfxSource);
     }
+    public void PlayInspectSound()
+    {
+        PlaySound(inspectseatSound, sfxSource);
+    }
+
+    public void PlayDoorSound()
+    {
+        PlaySound(opendoorSound, sfxSource);
+    }
 
     private void PlaySound(AudioClip clip, AudioSource source)
     {
