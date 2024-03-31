@@ -35,4 +35,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scene/Game/3_Fire on Board.unity
     guid: ff6211f8f4cc70c43b55fec66b4288b5
+  - enabled: 1
+    path: Assets/Scene/Tutorials/Fire-Tutorial.unity
+    guid: a5bf90f4a53091643b94a92776f07227
   m_configObjects: {}
