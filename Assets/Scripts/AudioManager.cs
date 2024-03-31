@@ -78,7 +78,7 @@ public class AudioManager : MonoBehaviour
             }
         }
 
-        else if (scene.name == "0_QuestionsScene (HTP)")
+        else if (scene.name == "0_QuestionsScene (HTP)" || scene.name == "1_QuestionsScene (LOP)" || scene.name == "2_QuestionsScene (Fire)" || scene.name == "3_QuestionsScene (Ditching)")
         {
             if (!musicSource.isPlaying || musicSource.clip != quizMusic)
             {
