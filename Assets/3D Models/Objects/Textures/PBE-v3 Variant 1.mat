@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: PBE Variant
+  m_Name: PBE-v3 Variant 1
   m_Shader: {fileID: 4800000, guid: bbb29bc6f1f0b704d989cac34a3a1b7e, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -94,7 +94,7 @@ Material:
     - _Glossiness: 0.6854546
     - _GlossyReflections: 1
     - _IntensityMask: 1
-    - _IntensityTransparentMap: 0.4
+    - _IntensityTransparentMap: 0
     - _InvertABaseColor: 0
     - _InvertMask: 0
     - _InvertTransparent: 0
