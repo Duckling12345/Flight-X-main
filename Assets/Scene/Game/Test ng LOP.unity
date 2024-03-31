@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -18804,12 +18804,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f215b425a4e7814286efec18e66ccd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sitButton: {fileID: 856880515}
-  standButton: {fileID: 290772145}
-  mainCamera: {fileID: 1886153635}
-  sittingCamera: {fileID: 2070130746}
-  player: {fileID: 1886153634}
-  sittingPlayer: {fileID: 594306150}
 --- !u!1 &416581342
 GameObject:
   m_ObjectHideFlags: 0
@@ -53515,6 +53509,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bc5ba0781b24234683f4b0f7b77a852, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  transitionAnim: {fileID: 0}
+  activate: {fileID: 0}
 --- !u!114 &1300922942
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -56711,6 +56707,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bc5ba0781b24234683f4b0f7b77a852, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  transitionAnim: {fileID: 0}
+  activate: {fileID: 0}
 --- !u!65 &1388352200
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -78383,8 +78381,12 @@ PrefabInstance:
       value: 80.5
       objectReference: {fileID: 0}
     - target: {fileID: 4493237118950422303, guid: 50cce52fd0c43ca4f98b077798e69fa1, type: 3}
+      propertyPath: shaker
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4493237118950422303, guid: 50cce52fd0c43ca4f98b077798e69fa1, type: 3}
       propertyPath: Sensitivity
-      value: 40
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4948710376217600134, guid: 50cce52fd0c43ca4f98b077798e69fa1, type: 3}
       propertyPath: m_text
@@ -78591,6 +78593,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1886153637}
     - target: {fileID: 7763165374666150733, guid: 50cce52fd0c43ca4f98b077798e69fa1, type: 3}
+      propertyPath: shaker
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7763165374666150733, guid: 50cce52fd0c43ca4f98b077798e69fa1, type: 3}
       propertyPath: Animation
       value: 
       objectReference: {fileID: 514059940}
@@ -78717,16 +78723,6 @@ GameObject:
 --- !u!224 &1886153633 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5017854462179685862, guid: 50cce52fd0c43ca4f98b077798e69fa1, type: 3}
-  m_PrefabInstance: {fileID: 1886153625}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1886153634 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 9138683659219802436, guid: 50cce52fd0c43ca4f98b077798e69fa1, type: 3}
-  m_PrefabInstance: {fileID: 1886153625}
-  m_PrefabAsset: {fileID: 0}
---- !u!20 &1886153635 stripped
-Camera:
-  m_CorrespondingSourceObject: {fileID: 581820910128451574, guid: 50cce52fd0c43ca4f98b077798e69fa1, type: 3}
   m_PrefabInstance: {fileID: 1886153625}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1886153636 stripped

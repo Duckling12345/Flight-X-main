@@ -22,9 +22,6 @@ public class PlayerMovement : MonoBehaviour
     public bool Opening;
     public Animator Animation;
 
-    // Reference to the CameraShake script
-    public GeneralCameraShake cameraShake;
-
     private void Awake()
     {
         controller = GetComponent<CharacterController>();
@@ -84,20 +81,5 @@ public class PlayerMovement : MonoBehaviour
     }
 
     // Triggered when player collides with a trigger collider
-    void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.CompareTag("Cube"))
-        {
-            Debug.Log("Player collided with cube!");
-            // Trigger camera shake
-            if (cameraShake != null)
-            {
-                //cameraShake.Shake();
-            }
-            else
-            {
-                Debug.LogError("CameraShake reference is not set!");
-            }
-        }
-    }
+  
 }
