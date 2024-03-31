@@ -33,9 +33,6 @@ public class ObjectiveActivator : MonoBehaviour
     }
 
 
-
-
-
     private void OnTriggerExit(Collider other)
     {
         Debug.Log("Player Exited");

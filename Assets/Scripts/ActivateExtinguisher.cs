@@ -6,7 +6,8 @@ public class ActivateExtinguisher : MonoBehaviour
 {
     public FixedExtinguishButton fixedExtinguish;
     public ExtinguisherScript extinguisher;
-    
+    public FixedWearButton fixedWear;
+    public WearScript wear;
     
     void Start()
     {
@@ -17,5 +18,6 @@ public class ActivateExtinguisher : MonoBehaviour
     void Update()
     {
         extinguisher.Pressed = fixedExtinguish.buttonPressed;
+        wear.wearPressed = fixedWear.Pressed;
     }
 }

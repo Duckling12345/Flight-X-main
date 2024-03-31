@@ -9,6 +9,7 @@ public class LastObjective : MonoBehaviour
     public FixedButton fixbutton;
     public GameObject active;
     public GameObject inactive;
+    public GameObject disableButton;
 
     private void Update()
     {
@@ -17,6 +18,7 @@ public class LastObjective : MonoBehaviour
             missingObjective.SetActive(true);
             inactive.SetActive(false);
             active.SetActive(true);
+            disableButton.SetActive(false);
         }
     }
 
