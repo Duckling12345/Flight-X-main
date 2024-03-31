@@ -13,11 +13,11 @@ public class InteractableObj : MonoBehaviour, IInteractable
     {
         activate.SetActive(true);
         transitionAnim.Play("FadeIn");
+        AudioManager.Instance.PlayInspectSound();
     }
 
     private void OnTriggerExit(Collider other)
     {
-
         activate.SetActive(false);
     }
 }
