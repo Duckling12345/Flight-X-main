@@ -5,13 +5,13 @@ using UnityEngine;
 public class TimerActivate : MonoBehaviour
 {
     public NPCScript npc;
-    public GameObject gameOver;
+    public GameObject timer;
     public GameObject Level;
     private void Update()
     {
         if(npc.talkPressed)
         {   
-            gameOver.SetActive(true);
+            timer.SetActive(true);
             Level.SetActive(true);
         }
     }
