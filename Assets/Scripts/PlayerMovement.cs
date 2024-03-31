@@ -23,7 +23,7 @@ public class PlayerMovement : MonoBehaviour
     public Animator Animation;
 
     // Reference to the CameraShake script
-    public CameraShake cameraShake;
+    public GeneralCameraShake cameraShake;
 
     private void Awake()
     {
@@ -92,7 +92,7 @@ public class PlayerMovement : MonoBehaviour
             // Trigger camera shake
             if (cameraShake != null)
             {
-                cameraShake.Shake();
+                //cameraShake.Shake();
             }
             else
             {
