@@ -16,6 +16,9 @@ public class AudioManager : MonoBehaviour
     [SerializeField] private AudioClip failedSound;
     [SerializeField] private AudioClip inspectseatSound;
     [SerializeField] private AudioClip opendoorSound;
+    [SerializeField] private AudioClip extinguishSound;
+    [SerializeField] private AudioClip oxygenSound;
+    [SerializeField] private AudioClip buckleSound;
 
     static AudioManager instance;
 
@@ -107,6 +110,21 @@ public class AudioManager : MonoBehaviour
     public void PlayDoorSound()
     {
         PlaySound(opendoorSound, sfxSource);
+    }
+
+    public void PlayExtinguishSound()
+    {
+        PlaySound(extinguishSound, sfxSource);
+    }
+
+    public void PlayOxygenSound()
+    {
+        PlaySound(oxygenSound, sfxSource);
+    }
+
+    public void PlayBuckleSound()
+    {
+        PlaySound(buckleSound, sfxSource);
     }
 
     public void PlaySound(AudioClip clip, AudioSource source)
