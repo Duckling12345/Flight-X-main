@@ -34,6 +34,7 @@ public class ExtinguisherScript : MonoBehaviour, IPointerDownHandler, IPointerUp
     {
         if (IsRaycastingFire(out FireScript fire))
             ExtinguishFire(fire);
+       
         else if (steamObject.activeSelf)
             steamObject.SetActive(false);
     }

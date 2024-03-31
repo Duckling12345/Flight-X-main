@@ -7,6 +7,7 @@ using UnityEngine.EventSystems;
 
 public class WearScript : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 {
+   
     public GameObject ObjectToWear;
     //public GameObject PBEWorn;
     public bool wearPressed;
@@ -17,6 +18,7 @@ public class WearScript : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     public int objectiveID;
     public GameObject activate;
     [SerializeField] Animator transitionAnim;
+    
     //Sound
 
 
@@ -40,6 +42,7 @@ public class WearScript : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
             //PBEWorn.SetActive(true);
             activate.SetActive(true);
             transitionAnim.Play("FadeIn");
+            AudioManager.Instance.PlayInspectSound();
         }
     }
 
