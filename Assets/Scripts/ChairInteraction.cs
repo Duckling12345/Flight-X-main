@@ -14,22 +14,6 @@ public class ChairInteraction : MonoBehaviour
 
     private Vector3 lastPlayerPosition; // Store the last position of the player before sitting
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("Player"))
-        {
-            sitButton.SetActive(true);
-        }
-    }
-
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.CompareTag("Player"))
-        {
-            sitButton.SetActive(false);
-            standButton.SetActive(false); // Disable stand button when leaving the trigger area
-        }
-    }
 
     public void Sit()
     {
@@ -63,5 +47,23 @@ public class ChairInteraction : MonoBehaviour
 
         // Disable the stand button
         standButton.SetActive(false);
+    }
+
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            sitButton.SetActive(true);
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            sitButton.SetActive(false);
+            standButton.SetActive(false); // Disable stand button when leaving the trigger area
+        }
     }
 }
