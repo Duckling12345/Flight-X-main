@@ -687,7 +687,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   button: {fileID: 325563146}
   DisclaimerUI: {fileID: 1692245714}
-  buildIndex: 7
+  buildIndex: 8
 --- !u!1001 &1053533153
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -18,10 +18,8 @@ public class EndScene : MonoBehaviour
     private void FadetoBlack()
     {
         int numbers = partikol.particleCount;
-
-
         if (fireScript.isLit == false && numbers == 0)
-        {
+        {   
             sceneMover.NextLevel();
         }
     }

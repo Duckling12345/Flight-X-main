@@ -15,7 +15,8 @@ public class WearScript : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     public GameObject disableButton;
     public ObjectiveScript objective;
     public int objectiveID;
-    //Animator
+    public GameObject activate;
+    [SerializeField] Animator transitionAnim;
     //Sound
 
 
@@ -37,7 +38,8 @@ public class WearScript : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
            ObjectToWear.SetActive(false);
             disableButton.SetActive(false);
             //PBEWorn.SetActive(true);
-            //play animation
+            activate.SetActive(true);
+            transitionAnim.Play("FadeIn");
         }
     }
 
