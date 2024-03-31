@@ -2735,7 +2735,6 @@ GameObject:
   - component: {fileID: 1525581170}
   - component: {fileID: 1525581169}
   - component: {fileID: 1525581168}
-  - component: {fileID: 1525581167}
   m_Layer: 0
   m_Name: Fire Extinguisher (1)
   m_TagString: Untagged
@@ -2758,22 +2757,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1304250768}
   m_LocalEulerAnglesHint: {x: 0, y: 91.42, z: 0}
---- !u!114 &1525581167
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1525581165}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a484e4780693a804496cf9022c7bae60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objectiveText1: {fileID: 1429166146}
-  fixbutton: {fileID: 872840519}
-  objective: {fileID: 1304250769}
-  objectiveID: 2
 --- !u!114 &1525581168
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2791,6 +2774,9 @@ MonoBehaviour:
   active: {fileID: 8331713792647184917}
   inactive: {fileID: 1525581165}
   disableButton: {fileID: 1773781687}
+  objectiveText1: {fileID: 1429166146}
+  objective: {fileID: 1304250769}
+  objectiveID: 2
 --- !u!65 &1525581169
 BoxCollider:
   m_ObjectHideFlags: 0

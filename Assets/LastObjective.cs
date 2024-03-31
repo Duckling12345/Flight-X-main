@@ -1,6 +1,7 @@
 using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class LastObjective : MonoBehaviour
@@ -10,15 +11,22 @@ public class LastObjective : MonoBehaviour
     public GameObject active;
     public GameObject inactive;
     public GameObject disableButton;
+    public TMP_Text objectiveText1;
+    public ObjectiveScript objective;
+    public int objectiveID;
+
+
 
     private void Update()
     {
-        if (fixbutton.Pressed == true)
+        if (fixbutton.Pressed == true && objective.objectivesDone == objectiveID)
         {
             missingObjective.SetActive(true);
             inactive.SetActive(false);
             active.SetActive(true);
             disableButton.SetActive(false);
+            objectiveText1.color = new Color32(0xC0, 0xC0, 0xC0, 0xFF);
+
         }
     }
 
