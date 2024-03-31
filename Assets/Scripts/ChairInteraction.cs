@@ -5,7 +5,7 @@ using UnityEngine;
 public class ChairInteraction : MonoBehaviour
 {
     public GameObject sitButton;
-    public GameObject standButton; // Button to stand up
+    public FixedButton fixbutton; //temporary will add new button;
     public Camera mainCamera;
     public Camera sittingCamera;
 
@@ -13,6 +13,16 @@ public class ChairInteraction : MonoBehaviour
     public GameObject sittingPlayer; // The sitting player GameObject
 
     private Vector3 lastPlayerPosition; // Store the last position of the player before sitting
+
+
+
+    private void Update()
+    {
+        if (fixbutton.Pressed)
+        {
+            Sit();
+        }
+    }
 
 
     public void Sit()
@@ -27,26 +37,6 @@ public class ChairInteraction : MonoBehaviour
         // Activate the sitting player and deactivate the standing player
         sittingPlayer.SetActive(true);
         player.SetActive(false);
-
-        // Activate the stand button
-        standButton.SetActive(true);
-    }
-
-    public void Stand()
-    {
-        // Deactivate the sitting camera and activate the main camera
-        sittingCamera.gameObject.SetActive(false);
-        mainCamera.gameObject.SetActive(true);
-
-        // Deactivate the sitting player and activate the standing player
-        sittingPlayer.SetActive(false);
-        player.SetActive(true);
-
-        // Move the player back to the last position before sitting
-        player.transform.position = lastPlayerPosition;
-
-        // Disable the stand button
-        standButton.SetActive(false);
     }
 
 
@@ -58,12 +48,5 @@ public class ChairInteraction : MonoBehaviour
         }
     }
 
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.CompareTag("Player"))
-        {
-            sitButton.SetActive(false);
-            standButton.SetActive(false); // Disable stand button when leaving the trigger area
-        }
-    }
-}
+
+ }

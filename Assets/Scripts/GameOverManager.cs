@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 public class GameOverManager : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI timerText;
-    [SerializeField] float remainingTime;
+    public float remainingTime;
     public GameObject GameOverMenu;
     public GameObject Timer;
     private void Update()
