@@ -52,10 +52,10 @@ public class LevelLoader : MonoBehaviour
 
         if (sceneIndex == 1) {
             title.text = "HOW TO PLAY | AIRBUS A320";
-        }else if (sceneIndex == 2)
+        }else if (sceneIndex == 12)
         {
             title.text = "FIRE ONBOARD | BOEING 787";
-        }else if (sceneIndex == 3)
+        }else if (sceneIndex == 10)
         {
             title.text = "LOSS OF PRESSURIZATION | AIRBUS A320";
         }else

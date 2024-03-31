@@ -1877,7 +1877,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4533449660980142709, guid: 730e7b62fa8cd1f4f8f2706e82c45a68, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7063089816218150408, guid: 730e7b62fa8cd1f4f8f2706e82c45a68, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2210,7 +2210,7 @@ Transform:
   m_GameObject: {fileID: 1353037310}
   serializedVersion: 2
   m_LocalRotation: {x: -0.0011737617, y: 0.0011737619, z: 0.70710576, w: -0.7071059}
-  m_LocalPosition: {x: 0.33, y: -0.44865918, z: 0.38}
+  m_LocalPosition: {x: 0.31, y: -0.44865918, z: 0.45}
   m_LocalScale: {x: 0.15791574, y: 0.23910874, z: 0.23910874}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3377,6 +3377,14 @@ PrefabInstance:
     - target: {fileID: 7763165374666150733, guid: 50cce52fd0c43ca4f98b077798e69fa1, type: 3}
       propertyPath: SpeedMove
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7791561797452904533, guid: 50cce52fd0c43ca4f98b077798e69fa1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7791561797452904533, guid: 50cce52fd0c43ca4f98b077798e69fa1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 8165724685363327388, guid: 50cce52fd0c43ca4f98b077798e69fa1, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -15011,7 +15019,7 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1540041863942086}
   serializedVersion: 8
-  lengthInSec: 10
+  lengthInSec: 60
   simulationSpeed: 1
   stopAction: 0
   cullingMode: 3
@@ -15682,7 +15690,7 @@ ParticleSystem:
         m_RotationOrder: 4
     randomizeRotationDirection: 0
     gravitySource: 0
-    maxNumParticles: 50
+    maxNumParticles: 70
     customEmitterVelocity: {x: 0, y: 0, z: 0}
     size3D: 1
     rotation3D: 0
