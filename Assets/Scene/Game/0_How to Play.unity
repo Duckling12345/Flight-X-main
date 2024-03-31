@@ -15121,6 +15121,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WearandInteractFade
       objectReference: {fileID: 0}
+    - target: {fileID: 102945623998708169, guid: f9be2d1fdae3a0e46ad85adaa082516d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4031627452614180391, guid: f9be2d1fdae3a0e46ad85adaa082516d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 601.1485
