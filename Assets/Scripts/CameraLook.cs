@@ -1,3 +1,4 @@
+using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,6 +11,7 @@ public class CameraLook : MonoBehaviour
     [SerializeField] private Transform PlayerBody;
     public Vector2 LockAxis;
     public float Sensitivity = 5f;
+    public Shake shaker;
 
     // Start is called before the first frame update
     void Start()
