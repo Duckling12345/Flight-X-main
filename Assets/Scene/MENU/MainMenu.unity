@@ -1024,10 +1024,14 @@ MonoBehaviour:
   sfxSource: {fileID: 1928117716}
   mainMenuMusic: {fileID: 8300000, guid: b46b63b012e07f04a875af511136ed63, type: 3}
   levelSelectionMusic: {fileID: 8300000, guid: cd5d87157ce773d4697882a32bd0e6e4, type: 3}
+  quizMusic: {fileID: 8300000, guid: a2dc65372a4fd86479ab9fb729bb8134, type: 3}
   checkpointSound: {fileID: 8300000, guid: 1f6b242484078a84cb5c0dc3884dd126, type: 3}
   failedSound: {fileID: 8300000, guid: 1d2b9e45a38510f4fab1a2701c9f1c3b, type: 3}
   inspectseatSound: {fileID: 8300000, guid: 32bd908a576d4294d922fded6546c0f4, type: 3}
   opendoorSound: {fileID: 8300000, guid: cebb413fdfcd5f549a84a4feb07c6e76, type: 3}
+  extinguishSound: {fileID: 8300000, guid: ea0fb0e38c576aa448e5ecfebe85b3f4, type: 3}
+  oxygenSound: {fileID: 8300000, guid: e2e8ddd673d2eef409a7cf5ac006a349, type: 3}
+  buckleSound: {fileID: 8300000, guid: ce7c1411d540f734faa9b092c37fbf58, type: 3}
 --- !u!4 &1154592855
 Transform:
   m_ObjectHideFlags: 0

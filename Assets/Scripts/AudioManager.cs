@@ -10,6 +10,7 @@ public class AudioManager : MonoBehaviour
     [Header("Background Music")]
     [SerializeField] private AudioClip mainMenuMusic; 
     [SerializeField] private AudioClip levelSelectionMusic;
+    [SerializeField] private AudioClip quizMusic;
 
     [Header("Sound Effects")]
     [SerializeField] private AudioClip checkpointSound;
@@ -50,18 +51,17 @@ public class AudioManager : MonoBehaviour
         instance = this;
         DontDestroyOnLoad(gameObject);
 
-        SceneManager.sceneLoaded += OnSceneLoaded; // Subscribe from the sceneLoaded event
+        SceneManager.sceneLoaded += OnSceneLoaded; //Subscribe from the sceneLoaded event
 
     }
 
     private void OnDestroy()
     {
-        SceneManager.sceneLoaded -= OnSceneLoaded; // Unsubscribe from the sceneLoaded event
+        SceneManager.sceneLoaded -= OnSceneLoaded; //Unsubscribe from the sceneLoaded event
     }
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        // Determine which background music to play based on the scene name
         if (scene.name == "MainMenu" || scene.name == "About")
         {
             if (!musicSource.isPlaying || musicSource.clip != mainMenuMusic)
@@ -76,7 +76,15 @@ public class AudioManager : MonoBehaviour
             {
                 PlayBackgroundMusic(levelSelectionMusic);
             }
-        } //la pa code for when the music should stop pag pasok ng lvl 1
+        }
+
+        else if (scene.name == "0_QuestionsScene (HTP)")
+        {
+            if (!musicSource.isPlaying || musicSource.clip != quizMusic)
+            {
+                PlayBackgroundMusic(quizMusic);
+            }
+        }
     }
 
     private void PlayBackgroundMusic(AudioClip clip)
