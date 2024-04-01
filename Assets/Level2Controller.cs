@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Level2Controller : MonoBehaviour
 {
-    //public FixedSeatBeltButton fixedSeatBelt;
-    //public SeatBelt seatBelt;
+    public FixedSeatbeltButton fixedSeatbelt;
+    public SeatbeltScript seatbelt;
 
     public FixedSitButton fixedSitButton;
     public ChairInteraction chairInteraction;
@@ -18,7 +18,7 @@ public class Level2Controller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //seatBelt.Pressed = fixedSeatBelt.Pressed;
+        seatbelt.Pressed = fixedSeatbelt.Pressed;
         chairInteraction.Pressed = fixedSitButton.Pressed;
     }
 }
