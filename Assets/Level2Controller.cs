@@ -10,6 +10,8 @@ public class Level2Controller : MonoBehaviour
     public FixedSitButton fixedSitButton;
     public ChairInteraction chairInteraction;
 
+    public FixedTouchField touchField;
+    public CameraLook cameraLook;
     void Start()
     {
         
@@ -18,6 +20,7 @@ public class Level2Controller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        cameraLook.LockAxis = touchField.TouchDist;
         seatbelt.Pressed = fixedSeatbelt.Pressed;
         chairInteraction.Pressed = fixedSitButton.Pressed;
     }

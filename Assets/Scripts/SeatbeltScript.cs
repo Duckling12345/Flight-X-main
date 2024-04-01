@@ -9,16 +9,27 @@ public class SeatbeltScript : MonoBehaviour, IPointerUpHandler, IPointerDownHand
     public bool Pressed;
     public FixedSeatbeltButton fixedSeatbelt;
     [SerializeField] Animator BuckleAnim;
-
+    public GameObject CameraAnimation;
+    public string StateName;
+    public GameObject tempDisable;
     void Update()
     {
         if (fixedSeatbelt.Pressed)
+        {
             FastenSeatbelt();
+        }
     }
     void FastenSeatbelt()
     {
-        BuckleAnim.Play("Fasten seatbelt of first passenger");
+        CameraAnimation.SetActive(true);
+        BuckleAnim.Play(StateName);
+        tempDisable.SetActive(false);
         //AudioManager.Instance.PlayBuckleSound();
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        CameraAnimation.SetActive(false);
+        tempDisable.SetActive(true);
     }
 
     void IPointerDownHandler.OnPointerDown(PointerEventData eventData)
