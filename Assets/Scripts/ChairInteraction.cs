@@ -5,19 +5,19 @@ using UnityEngine.EventSystems;
 
 public class ChairInteraction : MonoBehaviour, IPointerUpHandler, IPointerDownHandler
 {
+    public GameObject sitButton;
     public FixedSitButton fixedSitbutton;
     public Camera mainCamera;
     public Camera sittingCamera;
-     public  bool Pressed;
+    public  bool Pressed;
     public GameObject player; // The player GameObject
     public GameObject sittingPlayer; // The sitting player GameObject
     public Shake shaker;
     private Vector3 lastPlayerPosition; // Store the last position of the player before sitting
 
-
-
-    private void Update()
+    private void OnTriggerEnter(Collider other)
     {
+      
         if (fixedSitbutton.Pressed)
         {
             Sit();
@@ -25,6 +25,13 @@ public class ChairInteraction : MonoBehaviour, IPointerUpHandler, IPointerDownHa
         }
     }
 
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            sitButton.SetActive(false);
+        }
+    }
 
     public void Sit()
     {
@@ -38,7 +45,9 @@ public class ChairInteraction : MonoBehaviour, IPointerUpHandler, IPointerDownHa
         // Activate the sitting player and deactivate the standing player
         sittingPlayer.SetActive(true);
         player.SetActive(false);
+
     }
+
 
 
     void IPointerDownHandler.OnPointerDown(PointerEventData eventData)
@@ -49,6 +58,6 @@ public class ChairInteraction : MonoBehaviour, IPointerUpHandler, IPointerDownHa
     {
         Pressed = false;
     }
-
-
 }
+
+

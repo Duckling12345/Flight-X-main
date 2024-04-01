@@ -59,6 +59,7 @@ public class LevelLoader : MonoBehaviour
         {
             title.text = "Fire on Board | LEVEL 3";
         }else 
+
         { title.text = "WATER LANDING | BOEING 787"; 
         }
     }

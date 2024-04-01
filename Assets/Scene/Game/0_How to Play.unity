@@ -1245,10 +1245,13 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2116791787412166826, guid: 50cce52fd0c43ca4f98b077798e69fa1, type: 3}
+<<<<<<< Updated upstream
+=======
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2116791787412166826, guid: 50cce52fd0c43ca4f98b077798e69fa1, type: 3}
+>>>>>>> Stashed changes
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 8288847800413237732}
@@ -1257,15 +1260,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1319838110}
     - target: {fileID: 2116791787412166826, guid: 50cce52fd0c43ca4f98b077798e69fa1, type: 3}
+<<<<<<< Updated upstream
+=======
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
       objectReference: {fileID: 1884519409}
     - target: {fileID: 2116791787412166826, guid: 50cce52fd0c43ca4f98b077798e69fa1, type: 3}
+>>>>>>> Stashed changes
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2116791787412166826, guid: 50cce52fd0c43ca4f98b077798e69fa1, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2116791787412166826, guid: 50cce52fd0c43ca4f98b077798e69fa1, type: 3}
@@ -1285,6 +1287,8 @@ PrefabInstance:
       value: UnlockDoor, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2116791787412166826, guid: 50cce52fd0c43ca4f98b077798e69fa1, type: 3}
+<<<<<<< Updated upstream
+=======
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
       value: UnityEngine.AudioSource, UnityEngine
       objectReference: {fileID: 0}
@@ -1293,6 +1297,7 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: cebb413fdfcd5f549a84a4feb07c6e76, type: 3}
     - target: {fileID: 2116791787412166826, guid: 50cce52fd0c43ca4f98b077798e69fa1, type: 3}
+>>>>>>> Stashed changes
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
@@ -15139,10 +15144,6 @@ PrefabInstance:
     - target: {fileID: 102945623998708169, guid: f9be2d1fdae3a0e46ad85adaa082516d, type: 3}
       propertyPath: m_Name
       value: WearandInteractFade
-      objectReference: {fileID: 0}
-    - target: {fileID: 102945623998708169, guid: f9be2d1fdae3a0e46ad85adaa082516d, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4031627452614180391, guid: f9be2d1fdae3a0e46ad85adaa082516d, type: 3}
       propertyPath: m_LocalPosition.x

@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/ChairInteraction.cs.meta
+guid: c4d381c7ae55b224c948e257a6d0f1e8
+========
 guid: bf46c1039de161540b634d158651aa35
+>>>>>>>> d79031358ee650f06702302256abdaeb873eacbd:Assets/EndScene.cs.meta
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
