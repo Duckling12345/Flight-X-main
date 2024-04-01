@@ -22,7 +22,7 @@ public class PlayerMovement : MonoBehaviour
     public bool Opening;
     public Animator Animation;
 
-    private void Awake()
+    private void Start()
     {
         controller = GetComponent<CharacterController>();
         Opening = false;
@@ -81,5 +81,4 @@ public class PlayerMovement : MonoBehaviour
     }
 
     // Triggered when player collides with a trigger collider
-  
 }
