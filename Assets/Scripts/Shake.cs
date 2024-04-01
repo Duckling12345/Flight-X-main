@@ -5,11 +5,11 @@ using UnityEngine;
 public class Shake : MonoBehaviour
 {
     public GameOverManager timer;
-    public float shakeDuration = 0.2f;
-    public float shakeIntensity = 0.1f;
+    [SerializeField] private float shakeDuration;
+    public float shakeIntensity;
 
     private Vector3 initialPosition;
-    private float currentShakeDuration = 0f;
+    private float currentShakeDuration;
 
     //add indicator that in 30 second mark intensity + .2
     //figure out how to make the shake continous rather than on press only;
@@ -27,20 +27,20 @@ public class Shake : MonoBehaviour
     {
         if(currentShakeDuration > 0)
         {
-            Vector3 randomOffset = Random.insideUnitSphere * shakeIntensity;
-            transform.localPosition = initialPosition + randomOffset;
-            currentShakeDuration -= Time.deltaTime;
-
+         Vector3 randomOffset = Random.insideUnitSphere * shakeIntensity;
+         transform.localPosition = initialPosition + randomOffset;
+         currentShakeDuration -= Time.deltaTime;
+         Debug.Log("Event triggered");
         }
         else
         {
-            transform.localPosition = initialPosition;  
+            transform.localPosition = initialPosition;
         }
+      
     }
 
     public void ShakeScreen()
     {
-        Debug.Log("gagi nagshake ata");
-        currentShakeDuration = shakeDuration;
+        currentShakeDuration = timer.remainingTime;
     }
 }

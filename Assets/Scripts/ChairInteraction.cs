@@ -1,26 +1,27 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
-public class ChairInteraction : MonoBehaviour
+public class ChairInteraction : MonoBehaviour, IPointerUpHandler, IPointerDownHandler
 {
-    public GameObject sitButton;
-    public FixedButton fixbutton; //temporary will add new button;
+    public FixedSitButton fixedSitbutton;
     public Camera mainCamera;
     public Camera sittingCamera;
-
+     public  bool Pressed;
     public GameObject player; // The player GameObject
     public GameObject sittingPlayer; // The sitting player GameObject
-
+    public Shake shaker;
     private Vector3 lastPlayerPosition; // Store the last position of the player before sitting
 
 
 
     private void Update()
     {
-        if (fixbutton.Pressed)
+        if (fixedSitbutton.Pressed)
         {
             Sit();
+            shaker.ShakeScreen();
         }
     }
 
@@ -40,13 +41,14 @@ public class ChairInteraction : MonoBehaviour
     }
 
 
-    private void OnTriggerEnter(Collider other)
+    void IPointerDownHandler.OnPointerDown(PointerEventData eventData)
     {
-        if (other.CompareTag("Player"))
-        {
-            sitButton.SetActive(true);
-        }
+        Pressed = true;
+    }
+    void IPointerUpHandler.OnPointerUp(PointerEventData eventData)
+    {
+        Pressed = false;
     }
 
 
- }
+}
