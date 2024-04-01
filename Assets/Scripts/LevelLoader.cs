@@ -50,16 +50,21 @@ public class LevelLoader : MonoBehaviour
 
     public void ChangeText(int sceneIndex) {
 
-        if (sceneIndex == 6) {
-            title.text = "Preflight Checking | LEVEL 1";
-        }else if (sceneIndex == 9)
-        {
-            title.text = "Loss of Pressurization | LEVEL 2";
+        if (sceneIndex == 1) {
+            title.text = "HOW TO PLAY | AIRBUS A320";
         }else if (sceneIndex == 12)
         {
+<<<<<<< HEAD
             title.text = "Fire on Board | LEVEL 3";
         }else 
 
+=======
+            title.text = "FIRE ONBOARD | BOEING 787";
+        }else if (sceneIndex == 10)
+        {
+            title.text = "LOSS OF PRESSURIZATION | AIRBUS A320";
+        }else
+>>>>>>> parent of e6bedc5 (Update)
         { title.text = "WATER LANDING | BOEING 787"; 
         }
     }

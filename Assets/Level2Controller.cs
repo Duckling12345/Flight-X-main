@@ -7,8 +7,6 @@ public class Level2Controller : MonoBehaviour
     //public FixedSeatBeltButton fixedSeatBelt;
     //public SeatBelt seatBelt;
 
-    public FixedSitButton fixedSitButton;
-    public ChairInteraction chairInteraction;
 
     void Start()
     {
@@ -19,6 +17,5 @@ public class Level2Controller : MonoBehaviour
     void Update()
     {
         //seatBelt.Pressed = fixedSeatBelt.Pressed;
-        chairInteraction.Pressed = fixedSitButton.Pressed;
     }
 }

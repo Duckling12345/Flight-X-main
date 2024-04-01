@@ -1845,7 +1845,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timerText: {fileID: 382750009}
   remainingTime: 70
-  PlayerUI: {fileID: 1633434769}
   GameOverMenu: {fileID: 1436372011}
   Timer: {fileID: 1054514439}
 --- !u!4 &1054514441
@@ -3175,6 +3174,7 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 --- !u!1 &1633434769 stripped
@@ -3182,6 +3182,8 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7677441606330519397, guid: 50cce52fd0c43ca4f98b077798e69fa1, type: 3}
   m_PrefabInstance: {fileID: 1669841568}
   m_PrefabAsset: {fileID: 0}
+=======
+>>>>>>> parent of e6bedc5 (Update)
 --- !u!1001 &1650181732
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -38297,7 +38299,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   npc: {fileID: 4157820365798656479}
-  timer: {fileID: 1054514439}
+  gameOver: {fileID: 1054514439}
   Level: {fileID: 1304250767}
 --- !u!95 &4157820365798656482
 Animator:

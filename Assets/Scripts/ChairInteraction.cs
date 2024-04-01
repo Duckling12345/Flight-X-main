@@ -1,27 +1,36 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.EventSystems;
 
-public class ChairInteraction : MonoBehaviour, IPointerUpHandler, IPointerDownHandler
+public class ChairInteraction : MonoBehaviour
 {
     public GameObject sitButton;
+<<<<<<< HEAD
     public FixedSitButton fixedSitbutton;
     public Camera mainCamera;
     public Camera sittingCamera;
     public  bool Pressed;
+=======
+    public FixedButton fixbutton; //temporary will add new button;
+    public Camera mainCamera;
+    public Camera sittingCamera;
+
+>>>>>>> parent of e6bedc5 (Update)
     public GameObject player; // The player GameObject
     public GameObject sittingPlayer; // The sitting player GameObject
-    public Shake shaker;
+
     private Vector3 lastPlayerPosition; // Store the last position of the player before sitting
 
     private void OnTriggerEnter(Collider other)
     {
+<<<<<<< HEAD
       
         if (fixedSitbutton.Pressed)
+=======
+        if (fixbutton.Pressed)
+>>>>>>> parent of e6bedc5 (Update)
         {
             Sit();
-            shaker.ShakeScreen();
         }
     }
 
@@ -49,15 +58,24 @@ public class ChairInteraction : MonoBehaviour, IPointerUpHandler, IPointerDownHa
     }
 
 
+<<<<<<< HEAD
 
     void IPointerDownHandler.OnPointerDown(PointerEventData eventData)
+=======
+    private void OnTriggerEnter(Collider other)
+>>>>>>> parent of e6bedc5 (Update)
     {
-        Pressed = true;
+        if (other.CompareTag("Player"))
+        {
+            sitButton.SetActive(true);
+        }
     }
-    void IPointerUpHandler.OnPointerUp(PointerEventData eventData)
-    {
-        Pressed = false;
-    }
+<<<<<<< HEAD
 }
 
 
+=======
+
+
+ }
+>>>>>>> parent of e6bedc5 (Update)
