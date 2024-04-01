@@ -8,8 +8,12 @@ using UnityEngine.SceneManagement;
 public class GameOverManager : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI timerText;
+<<<<<<< Updated upstream
+    [SerializeField] float remainingTime;
+=======
     public float remainingTime;
     public GameObject PlayerUI;
+>>>>>>> Stashed changes
     public GameObject GameOverMenu;
     public GameObject Timer;
     private void Update()
