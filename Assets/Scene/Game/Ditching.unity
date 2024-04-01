@@ -3726,13 +3726,42 @@ PrefabInstance:
     - {fileID: 65702495048144492, guid: a9708510f37127c4fa5ffa9c8c324ace, type: 3}
     - {fileID: -8700617353114198275, guid: a9708510f37127c4fa5ffa9c8c324ace, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: a9708510f37127c4fa5ffa9c8c324ace, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 162672391}
   m_SourcePrefab: {fileID: 100100000, guid: a9708510f37127c4fa5ffa9c8c324ace, type: 3}
 --- !u!4 &162672389 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: a9708510f37127c4fa5ffa9c8c324ace, type: 3}
   m_PrefabInstance: {fileID: 162672388}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &162672390 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: a9708510f37127c4fa5ffa9c8c324ace, type: 3}
+  m_PrefabInstance: {fileID: 162672388}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &162672391
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 162672390}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &167650052
 GameObject:
   m_ObjectHideFlags: 0
@@ -9055,6 +9084,16 @@ PrefabInstance:
       addedObject: {fileID: 1918598428}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
+--- !u!1 &484786695 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6076027503749943484, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
+  m_PrefabInstance: {fileID: 484786694}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &484786696 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2679727714808082925, guid: 9e5df2a8bdd5f834b9c484e31038984b, type: 3}
+  m_PrefabInstance: {fileID: 484786694}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &490559670
 GameObject:
   m_ObjectHideFlags: 0
@@ -19710,6 +19749,7 @@ MonoBehaviour:
   mask: {fileID: 0}
   wear: {fileID: 0}
   sceneMover: {fileID: 0}
+  EndSound: {fileID: 0}
 --- !u!1 &1002282343
 GameObject:
   m_ObjectHideFlags: 0
@@ -19765,7 +19805,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   npc: {fileID: 1002282346}
   timer: {fileID: 1941394886}
-  Level: {fileID: 0}
+  Level: {fileID: 1825425659}
 --- !u!114 &1002282346
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19781,10 +19821,10 @@ MonoBehaviour:
   myConversation: {fileID: 1586189547}
   talkPressed: 0
   talkButton: {fileID: 1672256557}
-  objectiveText: {fileID: 0}
-  objectiveText1: {fileID: 0}
-  objectiveText2: {fileID: 0}
-  obstacle: {fileID: 0}
+  objectiveText: {fileID: 384817500}
+  objectiveText1: {fileID: 484786696}
+  objectiveText2: {fileID: 484786695}
+  obstacle: {fileID: 2042260180}
 --- !u!65 &1002282347
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20451,6 +20491,7 @@ MonoBehaviour:
   mask: {fileID: 0}
   wear: {fileID: 0}
   sceneMover: {fileID: 0}
+  EndSound: {fileID: 0}
 --- !u!1 &1024173588
 GameObject:
   m_ObjectHideFlags: 0
@@ -28488,6 +28529,7 @@ MonoBehaviour:
   mask: {fileID: 0}
   wear: {fileID: 0}
   sceneMover: {fileID: 0}
+  EndSound: {fileID: 0}
 --- !u!1 &1477703656
 GameObject:
   m_ObjectHideFlags: 0
@@ -29531,6 +29573,7 @@ MonoBehaviour:
   mask: {fileID: 0}
   wear: {fileID: 0}
   sceneMover: {fileID: 0}
+  EndSound: {fileID: 0}
 --- !u!1 &1546199488
 GameObject:
   m_ObjectHideFlags: 0
@@ -37896,6 +37939,11 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 173439388}
   m_SourcePrefab: {fileID: 100100000, guid: 50cce52fd0c43ca4f98b077798e69fa1, type: 3}
+--- !u!1 &1891834019 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7677441606330519397, guid: 50cce52fd0c43ca4f98b077798e69fa1, type: 3}
+  m_PrefabInstance: {fileID: 1891834018}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1897682689
 GameObject:
   m_ObjectHideFlags: 0
@@ -39247,7 +39295,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timerText: {fileID: 326944460}
   remainingTime: 70
-  PlayerUI: {fileID: 0}
+  PlayerUI: {fileID: 1891834019}
   GameOverMenu: {fileID: 1389682528}
   Timer: {fileID: 1941394886}
 --- !u!4 &1941394888
