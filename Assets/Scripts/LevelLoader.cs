@@ -50,6 +50,7 @@ public class LevelLoader : MonoBehaviour
 
     public void ChangeText(int sceneIndex) {
 
+<<<<<<< Updated upstream
         if (sceneIndex == 1) {
             title.text = "HOW TO PLAY | AIRBUS A320";
         }else if (sceneIndex == 2)
@@ -59,6 +60,17 @@ public class LevelLoader : MonoBehaviour
         {
             title.text = "LOSS OF PRESSURIZATION | AIRBUS A320";
         }else
+=======
+        if (sceneIndex == 6) {
+            title.text = "Preflight Checking | LEVEL 1";
+        }else if (sceneIndex == 9)
+        {
+            title.text = "Loss of Pressurization | LEVEL 2";
+        }else if (sceneIndex == 12)
+        {
+            title.text = "Fire on Board | LEVEL 3";
+        }else 
+>>>>>>> Stashed changes
         { title.text = "WATER LANDING | BOEING 787"; 
         }
     }

@@ -1,24 +1,36 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
-public class ChairInteraction : MonoBehaviour
+public class ChairInteraction : MonoBehaviour, IPointerUpHandler, IPointerDownHandler
 {
+<<<<<<< Updated upstream
     public GameObject sitButton;
     public GameObject standButton; // Button to stand up
+=======
+    public FixedSitButton fixedSitbutton;
+>>>>>>> Stashed changes
     public Camera mainCamera;
     public Camera sittingCamera;
-
+     public  bool Pressed;
     public GameObject player; // The player GameObject
     public GameObject sittingPlayer; // The sitting player GameObject
-
+    public Shake shaker;
     private Vector3 lastPlayerPosition; // Store the last position of the player before sitting
 
     private void OnTriggerEnter(Collider other)
     {
+<<<<<<< Updated upstream
         if (other.CompareTag("Player"))
         {
             sitButton.SetActive(true);
+=======
+        if (fixedSitbutton.Pressed)
+        {
+            Sit();
+            shaker.ShakeScreen();
+>>>>>>> Stashed changes
         }
     }
 
@@ -48,6 +60,7 @@ public class ChairInteraction : MonoBehaviour
         standButton.SetActive(true);
     }
 
+<<<<<<< Updated upstream
     public void Stand()
     {
         // Deactivate the sitting camera and activate the main camera
@@ -65,3 +78,17 @@ public class ChairInteraction : MonoBehaviour
         standButton.SetActive(false);
     }
 }
+=======
+
+    void IPointerDownHandler.OnPointerDown(PointerEventData eventData)
+    {
+        Pressed = true;
+    }
+    void IPointerUpHandler.OnPointerUp(PointerEventData eventData)
+    {
+        Pressed = false;
+    }
+
+
+}
+>>>>>>> Stashed changes

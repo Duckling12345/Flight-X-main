@@ -1845,6 +1845,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timerText: {fileID: 382750009}
   remainingTime: 70
+  PlayerUI: {fileID: 1633434769}
   GameOverMenu: {fileID: 1436372011}
   Timer: {fileID: 1054514439}
 --- !u!4 &1054514441
@@ -3174,6 +3175,88 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+<<<<<<< Updated upstream
+=======
+--- !u!1 &1633434769 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7677441606330519397, guid: 50cce52fd0c43ca4f98b077798e69fa1, type: 3}
+  m_PrefabInstance: {fileID: 1669841568}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1650181732
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1207145050}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: a5c3b31c84aa6f440bdcff84e8fac537, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.7636961
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a5c3b31c84aa6f440bdcff84e8fac537, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7636961
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a5c3b31c84aa6f440bdcff84e8fac537, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.7636961
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a5c3b31c84aa6f440bdcff84e8fac537, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -420.577
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a5c3b31c84aa6f440bdcff84e8fac537, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -183.69
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a5c3b31c84aa6f440bdcff84e8fac537, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 440.902
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a5c3b31c84aa6f440bdcff84e8fac537, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.73525155
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a5c3b31c84aa6f440bdcff84e8fac537, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a5c3b31c84aa6f440bdcff84e8fac537, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.6777944
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a5c3b31c84aa6f440bdcff84e8fac537, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a5c3b31c84aa6f440bdcff84e8fac537, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a5c3b31c84aa6f440bdcff84e8fac537, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 85.343
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a5c3b31c84aa6f440bdcff84e8fac537, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a5c3b31c84aa6f440bdcff84e8fac537, type: 3}
+      propertyPath: m_Name
+      value: Passenger 3 (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a5c3b31c84aa6f440bdcff84e8fac537, type: 3}
+--- !u!4 &1650181733 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: a5c3b31c84aa6f440bdcff84e8fac537, type: 3}
+  m_PrefabInstance: {fileID: 1650181732}
+  m_PrefabAsset: {fileID: 0}
+>>>>>>> Stashed changes
 --- !u!1001 &1669841568
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -38214,7 +38297,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   npc: {fileID: 4157820365798656479}
-  gameOver: {fileID: 1054514439}
+  timer: {fileID: 1054514439}
   Level: {fileID: 1304250767}
 --- !u!95 &4157820365798656482
 Animator:
