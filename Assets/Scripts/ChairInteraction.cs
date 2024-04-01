@@ -16,6 +16,7 @@ public class ChairInteraction : MonoBehaviour, IPointerUpHandler, IPointerDownHa
     public GameObject mask;
     [SerializeField] Animator wear;
     public UnlockDoor sceneMover;
+    public GameObject EndSound;
 
 
     private void Update()
@@ -24,7 +25,8 @@ public class ChairInteraction : MonoBehaviour, IPointerUpHandler, IPointerDownHa
         {
             Sit();
             shaker.ShakeScreen();
-            Invoke("playAnimation", 5f);
+            Invoke("playSound", 2f);
+            Invoke("playAnimation", 8f);
         }
     }
 
@@ -43,13 +45,18 @@ public class ChairInteraction : MonoBehaviour, IPointerUpHandler, IPointerDownHa
         player.SetActive(false);
         mask.SetActive(true);
         wear.Play("WearOxygen");
+        AudioManager.Instance.PlayOxygenSound();
 
     }
 
     public void playAnimation()
     {
         sceneMover.NextLevel();
-        
+    }
+
+    public void playSound()
+    {
+        EndSound.SetActive(true);
     }
 
     void IPointerDownHandler.OnPointerDown(PointerEventData eventData)
