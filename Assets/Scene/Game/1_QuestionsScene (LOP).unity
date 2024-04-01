@@ -207,7 +207,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 0}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 100
+  m_MaxValue: 5
   m_WholeNumbers: 0
   m_Value: 0
   m_OnValueChanged:
@@ -1071,10 +1071,11 @@ MonoBehaviour:
   - {fileID: 1136744347}
   currentQuestion: 0
   number: 0
+  slider: {fileID: 12717962}
   Quizpanel: {fileID: 1194893541}
   GoPanel: {fileID: 1563047000}
   QuestionTxt: {fileID: 180421764}
-  ScoreTxt: {fileID: 0}
+  ScoreTxt: {fileID: 1276789726}
   QuestionNum: {fileID: 1540910395}
   score: 0
   sceneBuildIndex: 8

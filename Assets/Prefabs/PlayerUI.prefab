@@ -35,7 +35,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 334.8643, y: 302.6921}
+  m_AnchoredPosition: {x: -259, y: 302.6921}
   m_SizeDelta: {x: 400, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3893861001472769219
@@ -664,7 +664,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 334.8643, y: 302.6921}
+  m_AnchoredPosition: {x: -259, y: 302.6921}
   m_SizeDelta: {x: 400, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3229807942601529312
@@ -1000,7 +1000,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 334.8643, y: 302.6921}
+  m_AnchoredPosition: {x: -259, y: 302.6921}
   m_SizeDelta: {x: 400, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &921123967212048526
@@ -1391,7 +1391,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 334.8643, y: 302.6921}
+  m_AnchoredPosition: {x: -259, y: 302.6921}
   m_SizeDelta: {x: 400, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5882649058153037458
@@ -1681,7 +1681,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 139, y: 135}
+  m_AnchoredPosition: {x: 139, y: -116}
   m_SizeDelta: {x: 250, y: 250}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8748353320539944753
@@ -1828,8 +1828,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -126, y: -56}
-  m_SizeDelta: {x: 220, y: 280}
+  m_AnchoredPosition: {x: -90, y: 58}
+  m_SizeDelta: {x: 182.01, y: 235.0799}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5432037804469212490
 CanvasRenderer:
@@ -1913,12 +1913,12 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 8165724685363327388}
+  - {fileID: 6846512946709842287}
   - {fileID: 6236339283271481603}
   - {fileID: 2043635331659555063}
   - {fileID: 921519063725321821}
   - {fileID: 4285694700038369580}
-  - {fileID: 8165724685363327388}
-  - {fileID: 6846512946709842287}
   m_Father: {fileID: 1084589309075954302}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}

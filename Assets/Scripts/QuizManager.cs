@@ -13,6 +13,7 @@ public class QuizManager : MonoBehaviour
     public int currentQuestion;
     public int number;
 
+    public Slider slider;
     public GameObject Quizpanel;
     public GameObject  GoPanel;    
     public TMP_Text QuestionTxt;
@@ -36,6 +37,7 @@ public class QuizManager : MonoBehaviour
     public void GameOver() {
         Quizpanel.SetActive(false);
         GoPanel.SetActive(true);
+        slider.value = score;
         ScoreTxt.text =  score + "/" + totalQuestions;
     }
 

@@ -1,40 +1,119 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class AudioManager : MonoBehaviour
 {
-    [Header("-----Audio Source-----")]
-    [SerializeField] AudioSource musicSource;
-    [SerializeField] AudioSource SFXSource;
+    [Header("Audio Sources")]
+    [SerializeField] private AudioSource musicSource;
+    [SerializeField] private AudioSource sfxSource;
 
-    [Header("-----Audio Clip-----")]
-    public AudioClip background;
-    public AudioClip checkpoint;
-    public AudioClip failed;
+    [Header("Background Music")]
+    [SerializeField] private AudioClip mainMenuMusic; 
+    [SerializeField] private AudioClip levelSelectionMusic;
 
-    public static AudioManager instance;
+    [Header("Sound Effects")]
+    [SerializeField] private AudioClip checkpointSound;
+    [SerializeField] private AudioClip failedSound;
+    [SerializeField] private AudioClip inspectseatSound;
+    [SerializeField] private AudioClip opendoorSound;
+
+    static AudioManager instance;
+
+    public static AudioManager Instance
+    {
+        get
+        {
+            if (instance == null)
+            {
+                instance = FindObjectOfType<AudioManager>();
+                if (instance == null)
+                {
+                    GameObject obj = new GameObject("AudioManager");
+                    instance = obj.AddComponent<AudioManager>();
+                }
+            }
+            return instance;
+        }
+    }
+
     private void Awake()
     {
-        if (instance == null)
+        if (instance != null && instance != this)
         {
-            instance = this;
-            DontDestroyOnLoad(gameObject);
+            Destroy(gameObject);
+            return;
+        }
+
+        instance = this;
+        DontDestroyOnLoad(gameObject);
+
+        SceneManager.sceneLoaded += OnSceneLoaded; // Subscribe from the sceneLoaded event
+
+    }
+
+    private void OnDestroy()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded; // Unsubscribe from the sceneLoaded event
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        // Determine which background music to play based on the scene name
+        if (scene.name == "MainMenu" || scene.name == "About")
+        {
+            if (!musicSource.isPlaying || musicSource.clip != mainMenuMusic)
+            {
+                PlayBackgroundMusic(mainMenuMusic);
+            }
+        }
+        else if (scene.name == "Level Modules")
+        {
+            musicSource.Stop();
+            if (!musicSource.isPlaying || musicSource.clip != levelSelectionMusic)
+            {
+                PlayBackgroundMusic(levelSelectionMusic);
+            }
+        } //la pa code for when the music should stop pag pasok ng lvl 1
+    }
+
+    private void PlayBackgroundMusic(AudioClip clip)
+    {
+        if (clip != null)
+        {
+            musicSource.clip = clip;
+            musicSource.loop = true;
+            musicSource.Play();
         }
         else
         {
-            Destroy(gameObject);
+            Debug.LogWarning("Background music clip is null.");
         }
-
-    }
-    private void Start()
-    {
-        musicSource.clip = background;
-        musicSource.Play();
     }
 
-    public void PlaySFX(AudioClip clip)
+    public void PlayCheckpointSound()
     {
-        SFXSource.PlayOneShot(clip);
+        PlaySound(checkpointSound, sfxSource);
+    }
+
+    public void PlayFailedSound()
+    {
+        PlaySound(failedSound, sfxSource);
+    }
+    public void PlayInspectSound()
+    {
+        PlaySound(inspectseatSound, sfxSource);
+    }
+
+    public void PlayDoorSound()
+    {
+        PlaySound(opendoorSound, sfxSource);
+    }
+
+    public void PlaySound(AudioClip clip, AudioSource source)
+    {
+        if (clip != null && source != null)
+        {
+            source.PlayOneShot(clip);
+        }
     }
 }
