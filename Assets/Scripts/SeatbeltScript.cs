@@ -1,3 +1,4 @@
+using DG.Tweening;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -12,10 +13,13 @@ public class SeatbeltScript : MonoBehaviour, IPointerUpHandler, IPointerDownHand
     public GameObject CameraAnimation;
     public string StateName;
     public GameObject tempDisable;
+    public Shake shaker;
+
     void Update()
     {
         if (fixedSeatbelt.Pressed)
         {
+            shaker.ShakeScreen();
             FastenSeatbelt();
         }
     }
