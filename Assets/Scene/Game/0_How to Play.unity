@@ -1290,11 +1290,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2116791787412166826, guid: 50cce52fd0c43ca4f98b077798e69fa1, type: 3}
 <<<<<<< HEAD
+<<<<<<< HEAD
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgument
       value: 
       objectReference: {fileID: 8300000, guid: cebb413fdfcd5f549a84a4feb07c6e76, type: 3}
     - target: {fileID: 2116791787412166826, guid: 50cce52fd0c43ca4f98b077798e69fa1, type: 3}
 >>>>>>> Stashed changes
+=======
+>>>>>>> parent of e6bedc5 (Update)
 =======
 >>>>>>> parent of e6bedc5 (Update)
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName

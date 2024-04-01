@@ -55,15 +55,21 @@ public class LevelLoader : MonoBehaviour
         }else if (sceneIndex == 12)
         {
 <<<<<<< HEAD
+<<<<<<< HEAD
             title.text = "Fire on Board | LEVEL 3";
         }else 
 
 =======
+=======
+>>>>>>> parent of e6bedc5 (Update)
             title.text = "FIRE ONBOARD | BOEING 787";
         }else if (sceneIndex == 10)
         {
             title.text = "LOSS OF PRESSURIZATION | AIRBUS A320";
         }else
+<<<<<<< HEAD
+>>>>>>> parent of e6bedc5 (Update)
+=======
 >>>>>>> parent of e6bedc5 (Update)
         { title.text = "WATER LANDING | BOEING 787"; 
         }

@@ -3175,6 +3175,7 @@ Light:
   m_ShadowRadius: 0
   m_ShadowAngle: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 --- !u!1 &1633434769 stripped
@@ -3182,6 +3183,8 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7677441606330519397, guid: 50cce52fd0c43ca4f98b077798e69fa1, type: 3}
   m_PrefabInstance: {fileID: 1669841568}
   m_PrefabAsset: {fileID: 0}
+=======
+>>>>>>> parent of e6bedc5 (Update)
 =======
 >>>>>>> parent of e6bedc5 (Update)
 --- !u!1001 &1650181732
