@@ -14601,7 +14601,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: ebc3cd7b5adf81f4abf16ac4d8faf64a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -88824,6 +88824,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timerText: {fileID: 511448349}
   remainingTime: 90
+  PlayerUI: {fileID: 0}
   GameOverMenu: {fileID: 1710828447}
   Timer: {fileID: 2106876147}
 --- !u!4 &2106876149
