@@ -15331,6 +15331,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   npc: {fileID: 375874052}
   shaker: {fileID: 1500110046}
+  shaker2: {fileID: 682147829}
 --- !u!114 &375874057
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20786,8 +20787,8 @@ GameObject:
   - component: {fileID: 515623414}
   - component: {fileID: 515623413}
   - component: {fileID: 515623412}
-  - component: {fileID: 515623417}
   - component: {fileID: 515623418}
+  - component: {fileID: 515623419}
   m_Layer: 0
   m_Name: ObjectiveChair
   m_TagString: Untagged
@@ -20917,22 +20918,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 515623409}
   m_Mesh: {fileID: -8997716596068595922, guid: 32188e4d73be93240b4895385cb19d22, type: 3}
---- !u!114 &515623417
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 515623409}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a484e4780693a804496cf9022c7bae60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objectiveText1: {fileID: 1486944459}
-  fixbutton: {fileID: 1068850571}
-  objective: {fileID: 21444180}
-  objectiveID: 2
 --- !u!114 &515623418
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20952,6 +20937,22 @@ MonoBehaviour:
   StateName: Fasten seatbelt of second passenger
   tempDisable: {fileID: 1500110041}
   shaker: {fileID: 682147829}
+--- !u!114 &515623419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 515623409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53fe44676457d1744b7f4f8b6e7bfbce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectiveText1: {fileID: 1486944459}
+  fixbutton: {fileID: 577062110}
+  objective: {fileID: 21444180}
+  objectiveID: 2
 --- !u!1 &520429542
 GameObject:
   m_ObjectHideFlags: 0
@@ -22880,27 +22881,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 577095155}
   m_Mesh: {fileID: 224376939782296391, guid: 32188e4d73be93240b4895385cb19d22, type: 3}
---- !u!65 &577611113
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 919132147665795697}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 1
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 20, y: 25, z: 20}
-  m_Center: {x: 0, y: 0.18960777, z: 0}
 --- !u!64 &577611114
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -28206,7 +28186,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timer: {fileID: 2106876148}
-  shakeDuration: 1
+  shakeDuration: 0
   shakeIntensity: -0.03
 --- !u!1 &685026894
 GameObject:
@@ -34761,6 +34741,9 @@ MonoBehaviour:
   player: {fileID: 1019179673}
   sittingPlayer: {fileID: 65303109}
   shaker: {fileID: 844427590}
+  mask: {fileID: 919132147665795697}
+  wear: {fileID: 919132147665795698}
+  sceneMover: {fileID: 1381748869}
 --- !u!114 &834232690
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34789,7 +34772,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4533449660980142709, guid: 730e7b62fa8cd1f4f8f2706e82c45a68, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7063089816218150408, guid: 730e7b62fa8cd1f4f8f2706e82c45a68, type: 3}
       propertyPath: m_LocalPosition.x
@@ -43944,17 +43927,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1066418243}
   m_Mesh: {fileID: -3788265871307459480, guid: 32188e4d73be93240b4895385cb19d22, type: 3}
---- !u!114 &1068850571 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2749211638906683811, guid: 50cce52fd0c43ca4f98b077798e69fa1, type: 3}
-  m_PrefabInstance: {fileID: 782475992}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 14013ea3a0e9f5f4bae956ece18333b0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1073061923
 GameObject:
   m_ObjectHideFlags: 0
@@ -92502,7 +92474,7 @@ Transform:
   m_GameObject: {fileID: 919132147665795697}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.7052024, z: -0, w: 0.70900613}
-  m_LocalPosition: {x: 217, y: 12.25, z: 700.6744}
+  m_LocalPosition: {x: 216.45, y: 12.92, z: 700.68}
   m_LocalScale: {x: 0.079785295, y: 0.079785295, z: 0.079785295}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -93824,7 +93796,7 @@ GameObject:
   m_Component:
   - component: {fileID: 543450651874730187}
   - component: {fileID: 577611114}
-  - component: {fileID: 577611113}
+  - component: {fileID: 919132147665795698}
   m_Layer: 0
   m_Name: Oxygen Mask
   m_TagString: Mask
@@ -93832,6 +93804,27 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
+--- !u!95 &919132147665795698
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919132147665795697}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2516b5db6c5365741a0a9a0058e3cee9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &919132147757346799
 GameObject:
   m_ObjectHideFlags: 0
@@ -119986,9 +119979,9 @@ GameObject:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 836572220}
   - {fileID: 1658016234}
   - {fileID: 1146936108}
-  - {fileID: 836572220}
   - {fileID: 1710828448}
   - {fileID: 2106876149}
   - {fileID: 21444179}

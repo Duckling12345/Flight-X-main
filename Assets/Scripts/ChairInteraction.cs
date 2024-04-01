@@ -13,7 +13,9 @@ public class ChairInteraction : MonoBehaviour, IPointerUpHandler, IPointerDownHa
     public GameObject sittingPlayer; // The sitting player GameObject
     public Shake shaker;
     private Vector3 lastPlayerPosition; // Store the last position of the player before sitting
-
+    public GameObject mask;
+    [SerializeField] Animator wear;
+    public UnlockDoor sceneMover;
 
 
     private void Update()
@@ -22,6 +24,7 @@ public class ChairInteraction : MonoBehaviour, IPointerUpHandler, IPointerDownHa
         {
             Sit();
             shaker.ShakeScreen();
+            Invoke("playAnimation", 5f);
         }
     }
 
@@ -38,8 +41,16 @@ public class ChairInteraction : MonoBehaviour, IPointerUpHandler, IPointerDownHa
         // Activate the sitting player and deactivate the standing player
         sittingPlayer.SetActive(true);
         player.SetActive(false);
+        mask.SetActive(true);
+        wear.Play("WearOxygen");
+
     }
 
+    public void playAnimation()
+    {
+        sceneMover.NextLevel();
+        
+    }
 
     void IPointerDownHandler.OnPointerDown(PointerEventData eventData)
     {
