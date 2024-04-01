@@ -7,10 +7,17 @@ public class ChairInteraction : MonoBehaviour
     public GameObject sitButton;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     public FixedSitButton fixedSitbutton;
     public Camera mainCamera;
     public Camera sittingCamera;
     public  bool Pressed;
+=======
+    public FixedButton fixbutton; //temporary will add new button;
+    public Camera mainCamera;
+    public Camera sittingCamera;
+
+>>>>>>> parent of e6bedc5 (Update)
 =======
     public FixedButton fixbutton; //temporary will add new button;
     public Camera mainCamera;
@@ -32,8 +39,12 @@ public class ChairInteraction : MonoBehaviour
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       
         if (fixedSitbutton.Pressed)
+=======
+        if (fixbutton.Pressed)
+>>>>>>> parent of e6bedc5 (Update)
 =======
         if (fixbutton.Pressed)
 >>>>>>> parent of e6bedc5 (Update)
@@ -71,8 +82,12 @@ public class ChairInteraction : MonoBehaviour
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     void IPointerDownHandler.OnPointerDown(PointerEventData eventData)
+=======
+    private void OnTriggerEnter(Collider other)
+>>>>>>> parent of e6bedc5 (Update)
 =======
     private void OnTriggerEnter(Collider other)
 >>>>>>> parent of e6bedc5 (Update)
@@ -87,9 +102,15 @@ public class ChairInteraction : MonoBehaviour
     }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 }
 
 
+=======
+
+
+ }
+>>>>>>> parent of e6bedc5 (Update)
 =======
 
 

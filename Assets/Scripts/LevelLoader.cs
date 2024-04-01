@@ -56,10 +56,13 @@ public class LevelLoader : MonoBehaviour
         {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             title.text = "Fire on Board | LEVEL 3";
         }else 
 
 =======
+=======
+>>>>>>> parent of e6bedc5 (Update)
 =======
 >>>>>>> parent of e6bedc5 (Update)
             title.text = "FIRE ONBOARD | BOEING 787";
@@ -68,6 +71,9 @@ public class LevelLoader : MonoBehaviour
             title.text = "LOSS OF PRESSURIZATION | AIRBUS A320";
         }else
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of e6bedc5 (Update)
+=======
 >>>>>>> parent of e6bedc5 (Update)
 =======
 >>>>>>> parent of e6bedc5 (Update)
