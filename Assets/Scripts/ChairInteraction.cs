@@ -5,15 +5,11 @@ using UnityEngine.EventSystems;
 
 public class ChairInteraction : MonoBehaviour, IPointerUpHandler, IPointerDownHandler
 {
-<<<<<<< Updated upstream
     public GameObject sitButton;
-    public GameObject standButton; // Button to stand up
-=======
     public FixedSitButton fixedSitbutton;
->>>>>>> Stashed changes
     public Camera mainCamera;
     public Camera sittingCamera;
-     public  bool Pressed;
+    public  bool Pressed;
     public GameObject player; // The player GameObject
     public GameObject sittingPlayer; // The sitting player GameObject
     public Shake shaker;
@@ -21,16 +17,11 @@ public class ChairInteraction : MonoBehaviour, IPointerUpHandler, IPointerDownHa
 
     private void OnTriggerEnter(Collider other)
     {
-<<<<<<< Updated upstream
-        if (other.CompareTag("Player"))
-        {
-            sitButton.SetActive(true);
-=======
+      
         if (fixedSitbutton.Pressed)
         {
             Sit();
             shaker.ShakeScreen();
->>>>>>> Stashed changes
         }
     }
 
@@ -39,7 +30,6 @@ public class ChairInteraction : MonoBehaviour, IPointerUpHandler, IPointerDownHa
         if (other.CompareTag("Player"))
         {
             sitButton.SetActive(false);
-            standButton.SetActive(false); // Disable stand button when leaving the trigger area
         }
     }
 
@@ -56,29 +46,9 @@ public class ChairInteraction : MonoBehaviour, IPointerUpHandler, IPointerDownHa
         sittingPlayer.SetActive(true);
         player.SetActive(false);
 
-        // Activate the stand button
-        standButton.SetActive(true);
     }
 
-<<<<<<< Updated upstream
-    public void Stand()
-    {
-        // Deactivate the sitting camera and activate the main camera
-        sittingCamera.gameObject.SetActive(false);
-        mainCamera.gameObject.SetActive(true);
 
-        // Deactivate the sitting player and activate the standing player
-        sittingPlayer.SetActive(false);
-        player.SetActive(true);
-
-        // Move the player back to the last position before sitting
-        player.transform.position = lastPlayerPosition;
-
-        // Disable the stand button
-        standButton.SetActive(false);
-    }
-}
-=======
 
     void IPointerDownHandler.OnPointerDown(PointerEventData eventData)
     {
@@ -88,7 +58,6 @@ public class ChairInteraction : MonoBehaviour, IPointerUpHandler, IPointerDownHa
     {
         Pressed = false;
     }
-
-
 }
->>>>>>> Stashed changes
+
+
