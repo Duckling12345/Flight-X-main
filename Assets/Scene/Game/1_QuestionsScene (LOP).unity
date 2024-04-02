@@ -1066,7 +1066,7 @@ MonoBehaviour:
     - Provide verbal reassurance and offer assistance.
     - 'Ignore the passengers who are panicking and focus on evacuation procedures. '
     - 'Use physical force to calm passengers down. '
-    - Encourage passengers to distract themselves. with in-flight entertainment.
+    - Encourage passengers to distract themselves with in-flight entertainment.
     CorrectAnswer: 1
   - Questions: After the loss of pressurization event has stabilized, what additional
       steps do flight attendants have to make?
