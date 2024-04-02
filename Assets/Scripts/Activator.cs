@@ -6,6 +6,8 @@ public class Activator : MonoBehaviour
 {
     public FixedExtinguishButton fixedExtinguish;
     public GameObject Extinguish;
+    public GameObject deactivateCurrent;
+
     void Start()
     {
         
@@ -21,6 +23,7 @@ public class Activator : MonoBehaviour
     {
         if (fixedExtinguish.buttonPressed)
         {
+            deactivateCurrent.SetActive(false);
             Extinguish.SetActive(true);  
         }
     }

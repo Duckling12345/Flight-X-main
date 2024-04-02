@@ -1,16 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using static Cinemachine.DocumentationSortingAttribute;
 
-public class ActivateLevel : MonoBehaviour
+public class ActivateIndicator : MonoBehaviour
 {
     public GameObject Level;
-    public GameObject Replacement;
     public NPCScript npc;
     public GameObject activateFirstObj;
-
-
 
     private void Update()
     {
@@ -23,7 +19,6 @@ public class ActivateLevel : MonoBehaviour
     void activateLevel()
     {
         Level.SetActive(true);
-        Replacement.SetActive(false);
         activateFirstObj.SetActive(true);
     }
 }

@@ -14,7 +14,8 @@ public class LastObjective : MonoBehaviour
     public TMP_Text objectiveText1;
     public ObjectiveScript objective;
     public int objectiveID;
-
+    public GameObject activateNext;
+    public GameObject deactivateCurrent;
 
 
     private void Update()
@@ -25,6 +26,8 @@ public class LastObjective : MonoBehaviour
             inactive.SetActive(false);
             active.SetActive(true);
             disableButton.SetActive(false);
+            activateNext.SetActive(true);
+            deactivateCurrent.SetActive(false);
             objectiveText1.color = new Color32(0xC0, 0xC0, 0xC0, 0xFF);
 
         }

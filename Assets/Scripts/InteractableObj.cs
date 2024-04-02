@@ -9,11 +9,15 @@ public class InteractableObj : MonoBehaviour, IInteractable
 {
     [SerializeField] Animator transitionAnim;
     public GameObject activate;
+    public GameObject activateNext;
+    public GameObject deactivateCurrent;
     public void Interact()
     {
         activate.SetActive(true);
         transitionAnim.Play("FadeIn");
         AudioManager.Instance.PlayInspectSound();
+        activateNext.SetActive(true);
+        deactivateCurrent.SetActive(false);
     }
 
     private void OnTriggerExit(Collider other)

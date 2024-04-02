@@ -17,6 +17,7 @@ public class ChairInteraction : MonoBehaviour, IPointerUpHandler, IPointerDownHa
     [SerializeField] Animator wear;
     public UnlockDoor sceneMover;
     public GameObject EndSound;
+    public GameObject deactivateCurrent;
 
 
     private void Update()
@@ -27,6 +28,7 @@ public class ChairInteraction : MonoBehaviour, IPointerUpHandler, IPointerDownHa
             shaker.ShakeScreen();
             Invoke("playSound", 2f);
             Invoke("playAnimation", 15f);
+            deactivateCurrent.SetActive(false);
         }
     }
 
