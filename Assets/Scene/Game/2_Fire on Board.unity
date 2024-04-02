@@ -2274,6 +2274,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ObjectToWear: {fileID: 1274419789}
+  PBEWorn: {fileID: 856393624414171425}
   wearPressed: 0
   objectiveText1: {fileID: 900841942}
   fixbutton: {fileID: 1837594020}
