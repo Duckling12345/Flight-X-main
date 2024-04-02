@@ -78,7 +78,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Talking
+  m_Name: Idle agen
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -92,7 +92,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: ac5792d86a5a1fd42b2a303a4fb95ddf, type: 2}
+  m_Motion: {fileID: 7400000, guid: c77bf77ea0c4d4f4fae3dce2fdc7911c, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -127,7 +127,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Idle Ulit
+  m_Name: Talking
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -140,7 +140,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: c77bf77ea0c4d4f4fae3dce2fdc7911c, type: 2}
+  m_Motion: {fileID: 7400000, guid: ac5792d86a5a1fd42b2a303a4fb95ddf, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -160,7 +160,7 @@ AnimatorStateMachine:
     m_Position: {x: 130, y: 210, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -3063498119995908935}
-    m_Position: {x: 400, y: 140, z: 0}
+    m_Position: {x: 420, y: 200, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 7041330519640068668}
     m_Position: {x: 440, y: 300, z: 0}
