@@ -35,7 +35,6 @@ public class GameOverManager : MonoBehaviour
         GameOverMenu.SetActive(true);
         PlayerUI.SetActive(false);
         AudioManager.Instance.PlayFailedSound();
-        Time.timeScale = 0f;
     }
 
    public void Retry()
