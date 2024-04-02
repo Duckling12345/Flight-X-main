@@ -9,7 +9,7 @@ public class WearScript : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 {
    
     public GameObject ObjectToWear;
-    //public GameObject PBEWorn;
+    public GameObject PBEWorn;
     public bool wearPressed;
     public TMP_Text objectiveText1;
     public FixedWearButton fixbutton;
@@ -19,7 +19,7 @@ public class WearScript : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     public GameObject activate;
     [SerializeField] Animator transitionAnim;
     
-    //Sound
+    
 
 
     private void Update()
@@ -31,15 +31,13 @@ public class WearScript : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
         }
     }
 
-
-
     void WearPBE()
     {
         if (wearPressed)
         {
            ObjectToWear.SetActive(false);
             disableButton.SetActive(false);
-            //PBEWorn.SetActive(true);
+            PBEWorn.SetActive(true);
             activate.SetActive(true);
             transitionAnim.Play("FadeIn");
             AudioManager.Instance.PlayInspectSound();
