@@ -157,8 +157,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -16.854, y: -43.063}
-  m_SizeDelta: {x: 1953.7075, y: 1003.6}
+  m_AnchoredPosition: {x: 0.000034604, y: 8.037}
+  m_SizeDelta: {x: 1920, y: 901.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &172646312
 MonoBehaviour:
@@ -180,7 +180,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 4b420b2aac4ae464188dd5892dfb1209, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 32d22e2dc8e2eb84ba69e3752bcde82b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -995,8 +995,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -413.9566, y: -379.36426}
-  m_SizeDelta: {x: 801.1567, y: 75.0013}
+  m_AnchoredPosition: {x: -449.61874, y: -380.10724}
+  m_SizeDelta: {x: 729.8325, y: 76.4872}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2046855296
 MonoBehaviour:
@@ -1018,8 +1018,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: The higher the aircraft flies, the higher the pressure differential that
-    needs to be maintained and the higher the stress on the aircraft structure.
+  m_text: "Evacuations are either planned, with time for briefing and preparation,
+    or unplanned, with no time for briefing or preparation.\r"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f1d02f8523692b4469f589fabf8e281b, type: 2}
   m_sharedMaterial: {fileID: 3358995831323606883, guid: f1d02f8523692b4469f589fabf8e281b, type: 2}
@@ -1108,7 +1108,7 @@ GameObject:
   - component: {fileID: 2113646465}
   - component: {fileID: 2113646464}
   m_Layer: 5
-  m_Name: FOB Title
+  m_Name: WD Title
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1153,7 +1153,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: LOSS OF PRESSURIZATION
+  m_text: WATER LANDING
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8b69cb9661d59a440b3bc9e0ff1eab8a, type: 2}
   m_sharedMaterial: {fileID: 5767788990938898048, guid: 8b69cb9661d59a440b3bc9e0ff1eab8a, type: 2}
