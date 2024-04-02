@@ -62326,7 +62326,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timer: {fileID: 2106876148}
   shakeDuration: 0
-  shakeIntensity: -0.03
+  shakeIntensity: -0.02
 --- !u!20 &1500110049 stripped
 Camera:
   m_CorrespondingSourceObject: {fileID: 581820910128451574, guid: 50cce52fd0c43ca4f98b077798e69fa1, type: 3}
