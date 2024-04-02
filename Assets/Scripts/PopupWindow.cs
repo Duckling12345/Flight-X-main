@@ -36,7 +36,7 @@ public class PopupWindow : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
         switch (scene.buildIndex)
         {
             case 6:
-                ShowPopup("Level 1 | Preflight Checking");
+                ShowPopup("Level 1 | Pre-flight Checking");
                 break;
 
             case 9:
@@ -60,7 +60,7 @@ public class PopupWindow : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     {
         if (clipPressed && scene.buildIndex == 6)
         {
-            ShowPopup("Level 1 | Preflight Checking");
+            ShowPopup("Level 1 | Pre-flight Checking");
         }
         else if (clipPressed && scene.buildIndex == 9)
         {
