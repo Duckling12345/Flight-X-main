@@ -62,6 +62,12 @@ public class AudioManager : MonoBehaviour
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
+        if (scene.name == "0_How to Play" || scene.name == "1_Loss of Pressurization" || scene.name == "2_Fire on Board" || scene.name == "Ditching")
+        {
+            musicSource.Stop();
+            return;
+        }
+
         if (scene.name == "MainMenu" || scene.name == "About")
         {
             if (!musicSource.isPlaying || musicSource.clip != mainMenuMusic)
@@ -69,6 +75,7 @@ public class AudioManager : MonoBehaviour
                 PlayBackgroundMusic(mainMenuMusic);
             }
         }
+
         else if (scene.name == "Level Modules")
         {
             musicSource.Stop();
@@ -139,6 +146,9 @@ public class AudioManager : MonoBehaviour
     {
         if (clip != null && source != null)
         {
+            //Stops current sfx
+            source.Stop();
+            //Plays new one dine
             source.PlayOneShot(clip);
         }
     }
