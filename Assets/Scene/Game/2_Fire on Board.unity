@@ -2096,13 +2096,13 @@ MonoBehaviour:
   renderers:
   - {fileID: 1711815026}
   style:
-    texture: {fileID: 0}
+    texture: {fileID: 2800000, guid: 99b8adda034998943af6ff678b73ab8e, type: 3}
     color: {r: 1, g: 1, b: 1, a: 1}
     width: 32
     height: 32
   showArrow: 1
   arrowStyle:
-    texture: {fileID: 0}
+    texture: {fileID: 2800000, guid: fee5f3312f3de974ba2a0756ff79b25f, type: 3}
     color: {r: 1, g: 1, b: 1, a: 1}
     margin: 0
     width: 16
@@ -2123,7 +2123,7 @@ MonoBehaviour:
   renderers:
   - {fileID: 1711815026}
   style:
-    texture: {fileID: 0}
+    texture: {fileID: 2800000, guid: a4a683042a1f58b4e845264fdc556556, type: 3}
     color: {r: 1, g: 1, b: 1, a: 1}
     width: 32
     height: 32
@@ -2246,13 +2246,13 @@ MonoBehaviour:
   renderers:
   - {fileID: 1711815026}
   style:
-    texture: {fileID: 2800000, guid: a4a683042a1f58b4e845264fdc556556, type: 3}
+    texture: {fileID: 2800000, guid: 99b8adda034998943af6ff678b73ab8e, type: 3}
     color: {r: 1, g: 1, b: 1, a: 1}
     width: 32
     height: 32
   showArrow: 1
   arrowStyle:
-    texture: {fileID: 0}
+    texture: {fileID: 2800000, guid: fee5f3312f3de974ba2a0756ff79b25f, type: 3}
     color: {r: 1, g: 1, b: 1, a: 1}
     margin: 0
     width: 16
@@ -3843,13 +3843,13 @@ MonoBehaviour:
   renderers:
   - {fileID: 1711815026}
   style:
-    texture: {fileID: 0}
+    texture: {fileID: 2800000, guid: 99b8adda034998943af6ff678b73ab8e, type: 3}
     color: {r: 1, g: 1, b: 1, a: 1}
     width: 32
     height: 32
   showArrow: 1
   arrowStyle:
-    texture: {fileID: 0}
+    texture: {fileID: 2800000, guid: fee5f3312f3de974ba2a0756ff79b25f, type: 3}
     color: {r: 1, g: 1, b: 1, a: 1}
     margin: 0
     width: 16
@@ -3870,7 +3870,7 @@ MonoBehaviour:
   renderers:
   - {fileID: 1711815026}
   style:
-    texture: {fileID: 0}
+    texture: {fileID: 2800000, guid: a4a683042a1f58b4e845264fdc556556, type: 3}
     color: {r: 1, g: 1, b: 1, a: 1}
     width: 32
     height: 32
