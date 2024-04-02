@@ -26,7 +26,7 @@ public class ChairInteraction : MonoBehaviour, IPointerUpHandler, IPointerDownHa
             Sit();
             shaker.ShakeScreen();
             Invoke("playSound", 2f);
-            Invoke("playAnimation", 8f);
+            Invoke("playAnimation", 15f);
         }
     }
 
