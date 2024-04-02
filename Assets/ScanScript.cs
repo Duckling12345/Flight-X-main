@@ -1,14 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
 public class ScanScript : MonoBehaviour, IPointerUpHandler, IPointerDownHandler
 {
-
+    public GameObject objectiveText3;
     public GameObject scanButton;
     public GameObject goBackButton; // Button to stand up
-
+    public GameObject door; 
+    public GameObject defaultObject;
+    public GameObject Activate;
     public FixedBackButton fixedBackbutton;
     public FixedScanButton fixedscanbutton;
 
@@ -19,14 +22,22 @@ public class ScanScript : MonoBehaviour, IPointerUpHandler, IPointerDownHandler
     public GameObject lookCapsule; // The sitting player GameObject
     private Vector3 lastPlayerPosition; // Store the last position of the player before sitting
 
+    public TMP_Text objectiveText1;
+    public TMP_Text objectiveText2;
+    public ObjectiveScript objective;
+    public int objectiveID;
+ 
+
     private void Update()
     {
-        if (fixedscanbutton.Pressed)
+        if (fixedscanbutton.Pressed && objective.objectivesDone == objectiveID)
         {
+            objectiveText2.color = new Color32(0xC0, 0xC0, 0xC0, 0xFF);
             Sit();
         }
-        else if (fixedBackbutton.Pressed)
+        else if (fixedBackbutton.Pressed && objective.objectivesDone == objectiveID)
         {
+            objectiveText1.color = new Color32(0xC0, 0xC0, 0xC0, 0xFF);
             Stand();
         }
     }
@@ -63,13 +74,19 @@ public class ScanScript : MonoBehaviour, IPointerUpHandler, IPointerDownHandler
         player.transform.position = lastPlayerPosition;
 
         // Disable the stand button
+
+        Activate.SetActive(true);
+        defaultObject.SetActive(false);
+        door.SetActive(false);
         goBackButton.SetActive(false);
+        objectiveText3.SetActive(true);
     }
 
     private void OnTriggerExit(Collider other)
     {
         lookCapsule.SetActive(false);
         player.SetActive(true);
+        scanButton.SetActive(false);
 
     }
 
