@@ -16853,6 +16853,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 409606370}
   m_Mesh: {fileID: -6761583154040148038, guid: 32188e4d73be93240b4895385cb19d22, type: 3}
+--- !u!1 &417613536 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6877283994344763843, guid: 50cce52fd0c43ca4f98b077798e69fa1, type: 3}
+  m_PrefabInstance: {fileID: 782475992}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &418270642
 GameObject:
   m_ObjectHideFlags: 0
@@ -20789,6 +20794,8 @@ GameObject:
   - component: {fileID: 515623412}
   - component: {fileID: 515623418}
   - component: {fileID: 515623419}
+  - component: {fileID: 515623421}
+  - component: {fileID: 515623420}
   m_Layer: 0
   m_Name: ObjectiveChair
   m_TagString: Untagged
@@ -20953,6 +20960,53 @@ MonoBehaviour:
   fixbutton: {fileID: 577062110}
   objective: {fileID: 21444180}
   objectiveID: 2
+--- !u!114 &515623420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 515623409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c660d981a1dbd44eaa0fdbbbd053c0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  visible: 1
+  renderers:
+  - {fileID: 1349986359}
+  style:
+    texture: {fileID: 2800000, guid: 690b76bcd3af99e4fb172fcfe6786e99, type: 3}
+    color: {r: 0.9490197, g: 0.6745098, b: 0.20392159, a: 1}
+    width: 32
+    height: 32
+--- !u!114 &515623421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 515623409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c08470e2a2343b14e90107557e5208ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  visible: 1
+  renderers:
+  - {fileID: 1349986359}
+  style:
+    texture: {fileID: 2800000, guid: 690b76bcd3af99e4fb172fcfe6786e99, type: 3}
+    color: {r: 0.9490197, g: 0.6745098, b: 0.20392159, a: 1}
+    width: 32
+    height: 32
+  showArrow: 1
+  arrowStyle:
+    texture: {fileID: 0}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    margin: 0
+    width: 16
+    height: 16
 --- !u!1 &520429542
 GameObject:
   m_ObjectHideFlags: 0
@@ -32281,6 +32335,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7101956818226961904, guid: 50cce52fd0c43ca4f98b077798e69fa1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1500110046}
+    - targetCorrespondingSourceObject: {fileID: 6877283994344763843, guid: 50cce52fd0c43ca4f98b077798e69fa1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1349986359}
     - targetCorrespondingSourceObject: {fileID: 7507833022584045724, guid: 50cce52fd0c43ca4f98b077798e69fa1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 125435635}
@@ -34662,6 +34719,8 @@ GameObject:
   - component: {fileID: 834232688}
   - component: {fileID: 834232689}
   - component: {fileID: 834232690}
+  - component: {fileID: 834232692}
+  - component: {fileID: 834232691}
   m_Layer: 0
   m_Name: Seat1
   m_TagString: Untagged
@@ -34816,6 +34875,53 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InteractButton: {fileID: 360663363}
   DestroyOnExit: {fileID: 834232682}
+--- !u!114 &834232691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 834232682}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c660d981a1dbd44eaa0fdbbbd053c0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  visible: 1
+  renderers:
+  - {fileID: 1349986359}
+  style:
+    texture: {fileID: 2800000, guid: ebc3cd7b5adf81f4abf16ac4d8faf64a, type: 3}
+    color: {r: 0.9490197, g: 0.6745098, b: 0.20392159, a: 1}
+    width: 32
+    height: 32
+--- !u!114 &834232692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 834232682}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c08470e2a2343b14e90107557e5208ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  visible: 1
+  renderers:
+  - {fileID: 1349986359}
+  style:
+    texture: {fileID: 2800000, guid: ebc3cd7b5adf81f4abf16ac4d8faf64a, type: 3}
+    color: {r: 0.9490197, g: 0.6745098, b: 0.20392159, a: 1}
+    width: 32
+    height: 32
+  showArrow: 1
+  arrowStyle:
+    texture: {fileID: 0}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    margin: 0
+    width: 16
+    height: 16
 --- !u!1001 &836572220
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -56041,12 +56147,28 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7238783138315504431, guid: 50cce52fd0c43ca4f98b077798e69fa1, type: 3}
   m_PrefabInstance: {fileID: 782475992}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 417613536}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 242880c15d656ea4b810830aa3cf9998, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1349986359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 417613536}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7021516d04f61c349bc023298c6edded, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  visible: 1
+  margin: 32
+  canvasColor: {r: 0, g: 0.8117647, b: 1, a: 0.105882354}
+  camera: {fileID: 1500110049}
 --- !u!1 &1351857000
 GameObject:
   m_ObjectHideFlags: 0
@@ -83619,6 +83741,8 @@ GameObject:
   - component: {fileID: 1996033555}
   - component: {fileID: 1996033554}
   - component: {fileID: 1996033559}
+  - component: {fileID: 1996033561}
+  - component: {fileID: 1996033560}
   m_Layer: 0
   m_Name: ObjectiveChair
   m_TagString: Untagged
@@ -83767,6 +83891,53 @@ MonoBehaviour:
   StateName: Fasten seatbelt of first passenger
   tempDisable: {fileID: 1500110041}
   shaker: {fileID: 682147829}
+--- !u!114 &1996033560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1996033551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c660d981a1dbd44eaa0fdbbbd053c0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  visible: 1
+  renderers:
+  - {fileID: 1349986359}
+  style:
+    texture: {fileID: 2800000, guid: 690b76bcd3af99e4fb172fcfe6786e99, type: 3}
+    color: {r: 0.9490197, g: 0.6745098, b: 0.20392159, a: 1}
+    width: 32
+    height: 32
+--- !u!114 &1996033561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1996033551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c08470e2a2343b14e90107557e5208ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  visible: 1
+  renderers:
+  - {fileID: 1349986359}
+  style:
+    texture: {fileID: 2800000, guid: 690b76bcd3af99e4fb172fcfe6786e99, type: 3}
+    color: {r: 0.9490197, g: 0.6745098, b: 0.20392159, a: 1}
+    width: 32
+    height: 32
+  showArrow: 1
+  arrowStyle:
+    texture: {fileID: 0}
+    color: {r: 1, g: 1, b: 1, a: 1}
+    margin: 0
+    width: 16
+    height: 16
 --- !u!1 &1997991239
 GameObject:
   m_ObjectHideFlags: 0
@@ -120344,15 +120515,15 @@ SceneRoots:
   - {fileID: 1146936108}
   - {fileID: 1710828448}
   - {fileID: 2106876149}
+  - {fileID: 160608393}
   - {fileID: 21444179}
   - {fileID: 65303110}
   - {fileID: 543450651874730187}
-  - {fileID: 624504399}
   - {fileID: 782475992}
+  - {fileID: 624504399}
   - {fileID: 1828772947}
   - {fileID: 115531883}
-  - {fileID: 160608393}
+  - {fileID: 669797735}
   - {fileID: 375874054}
   - {fileID: 1926273158}
   - {fileID: 1598173780}
-  - {fileID: 669797735}
