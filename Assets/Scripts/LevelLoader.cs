@@ -10,6 +10,8 @@ public class LevelLoader : MonoBehaviour
     public Slider slider;
     public GameObject image1;
     public GameObject image2;
+    public GameObject image3;
+    public GameObject immage4;
 
     public Text title;
 
