@@ -11,7 +11,7 @@ public class LevelLoader : MonoBehaviour
     public GameObject image1;
     public GameObject image2;
     public GameObject image3;
-    public GameObject immage4;
+    public GameObject image4;
 
     public Text title;
 
@@ -41,11 +41,15 @@ public class LevelLoader : MonoBehaviour
         {
             image1.SetActive(true);
             image2.SetActive(false);
+            image3.SetActive(false);
+            image4.SetActive(false);
         }
         else
         {
             image1.SetActive(false);
             image2.SetActive(true);
+            image3.SetActive(false);
+            image4.SetActive(false);
         }
 
     }
