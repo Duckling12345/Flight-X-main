@@ -17,8 +17,7 @@ public class LevelLoader : MonoBehaviour
 
     IEnumerator LoadAsynchronously(int sceneIndex)
     {
-        AsyncOperation operation = SceneManager.LoadSceneAsync(sceneIndex);
-
+        
         switch (sceneIndex)
         {
             case 6:
@@ -35,14 +34,17 @@ public class LevelLoader : MonoBehaviour
                 break;
         }
 
+       
+        AsyncOperation operation = SceneManager.LoadSceneAsync(sceneIndex);
+
         while (!operation.isDone)
         {
             float progress = Mathf.Clamp01(operation.progress / .9f);
-            // Update loading progress
+            
             yield return null;
         }
 
-        // Scene loaded, update images and text
+    
         SceneLoad(sceneIndex);
     }
 
@@ -51,16 +53,16 @@ public class LevelLoader : MonoBehaviour
         switch (sceneIndex)
         {
             case 6:
-                // Update title for sceneIndex 6
+               
                 break;
             case 9:
-                // Update title for sceneIndex 7
+               
                 break;
             case 12:
-                // Update title for sceneIndex 8
+               
                 break;
             case 15:
-                // Update title for sceneIndex 9
+               
                 break;
         }
     }
