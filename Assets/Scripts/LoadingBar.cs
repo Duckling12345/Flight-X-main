@@ -7,7 +7,11 @@ using DentedPixel;
 public class LoadingBar : MonoBehaviour
 {
     
-    public GameObject LoadBar;
+    public GameObject LoadBar0;
+    public GameObject LoadBar1;
+    public GameObject LoadBar2;
+    public GameObject LoadBar3;
+
     public int time;
     
     void Start()
@@ -21,7 +25,12 @@ public class LoadingBar : MonoBehaviour
         
     }
 
-    public void AnimateBar() {
-        LeanTween.scaleX(LoadBar, 1, time);
-    }
+    public void AnimateBar()
+{
+    LeanTween.scaleX(LoadBar0, 1, time);
+    LeanTween.scaleX(LoadBar1, 1, time);
+    LeanTween.scaleX(LoadBar2, 1, time);
+    LeanTween.scaleX(LoadBar3, 1, time);
+}
+
 }

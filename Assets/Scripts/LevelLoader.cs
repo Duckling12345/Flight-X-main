@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -6,67 +5,63 @@ using UnityEngine.UI;
 
 public class LevelLoader : MonoBehaviour
 {
-    public GameObject loadingScreen;
-    public Slider slider;
-    public GameObject image1;
-    public GameObject image2;
-    public GameObject image3;
-    public GameObject image4;
-
-    public Text title;
-
+    public GameObject loadingScreen0;
+    public GameObject loadingScreen1;
+    public GameObject loadingScreen2;
+    public GameObject loadingScreen3;
 
     public void LoadLevel(int sceneIndex)
     {
-        StartCoroutine(LoadAsyncronously(sceneIndex));
+        StartCoroutine(LoadAsynchronously(sceneIndex));
     }
 
-    IEnumerator LoadAsyncronously(int sceneIndex)
+    IEnumerator LoadAsynchronously(int sceneIndex)
     {
         AsyncOperation operation = SceneManager.LoadSceneAsync(sceneIndex);
 
-        loadingScreen.SetActive(true);
+        switch (sceneIndex)
+        {
+            case 6:
+                loadingScreen0.SetActive(true);
+                break;
+            case 9:
+                loadingScreen1.SetActive(true);
+                break;
+            case 12:
+                loadingScreen2.SetActive(true);
+                break;
+            case 15:
+                loadingScreen3.SetActive(true);
+                break;
+        }
 
         while (!operation.isDone)
         {
             float progress = Mathf.Clamp01(operation.progress / .9f);
-            slider.value = progress;
+            // Update loading progress
             yield return null;
         }
+
+        // Scene loaded, update images and text
+        SceneLoad(sceneIndex);
     }
 
-    public void ChangeImage(int sceneIndex)
+    public void SceneLoad(int sceneIndex)
     {
-        if (sceneIndex == 1 || sceneIndex == 3)
+        switch (sceneIndex)
         {
-            image1.SetActive(true);
-            image2.SetActive(false);
-            image3.SetActive(false);
-            image4.SetActive(false);
-        }
-        else
-        {
-            image1.SetActive(false);
-            image2.SetActive(true);
-            image3.SetActive(false);
-            image4.SetActive(false);
-        }
-
-    }
-
-    public void ChangeText(int sceneIndex) {
-
-        if (sceneIndex == 6) {
-            title.text = "Preflight Checking | LEVEL 1";
-        }else if (sceneIndex == 9)
-        {
-            title.text = "Loss of Pressurization | LEVEL 2";
-        }else if (sceneIndex == 12)
-        {
-            title.text = "Fire on Board | LEVEL 3";
-        }else 
-        { title.text = "WATER LANDING | BOEING 787"; 
+            case 6:
+                // Update title for sceneIndex 6
+                break;
+            case 9:
+                // Update title for sceneIndex 7
+                break;
+            case 12:
+                // Update title for sceneIndex 8
+                break;
+            case 15:
+                // Update title for sceneIndex 9
+                break;
         }
     }
-
 }
