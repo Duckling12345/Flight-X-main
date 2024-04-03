@@ -18,6 +18,7 @@ public class LastCheck : MonoBehaviour
 
     public string changeObjectiveText;
     public string changeObjectiveText1;
+    public GameObject DisableButton;
 
 
     private void OnTriggerEnter(Collider other)
@@ -25,6 +26,7 @@ public class LastCheck : MonoBehaviour
 
         if (objective.objectivesDone == objectiveID)
         {
+            DisableButton.SetActive(false);
             objectiveText.text = changeObjectiveText;
             objectiveText.color = Color.black;
 

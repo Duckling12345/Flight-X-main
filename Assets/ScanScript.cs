@@ -80,6 +80,7 @@ public class ScanScript : MonoBehaviour, IPointerUpHandler, IPointerDownHandler
         door.SetActive(false);
         goBackButton.SetActive(false);
         objectiveText3.SetActive(true);
+        scanButton.SetActive(false);
     }
 
     private void OnTriggerExit(Collider other)
