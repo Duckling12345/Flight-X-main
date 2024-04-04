@@ -2820,7 +2820,7 @@ MonoBehaviour:
   ScoreTxt: {fileID: 1957686914}
   QuestionNum: {fileID: 197745482}
   score: 0
-  sceneBuildIndex: 8
+  sceneBuildIndex: 2
 --- !u!4 &1763764257
 Transform:
   m_ObjectHideFlags: 0

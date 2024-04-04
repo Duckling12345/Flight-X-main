@@ -72,11 +72,6 @@ public class QuizManager : MonoBehaviour
         SceneManager.LoadScene(sceneBuildIndex, LoadSceneMode.Single);
     }
 
-    //public void backToMenu()
-    //{
-
-    //}
-
     void SetAnswers()
     {
 
