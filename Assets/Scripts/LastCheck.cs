@@ -20,6 +20,9 @@ public class LastCheck : MonoBehaviour
     public string changeObjectiveText1;
     public GameObject DisableButton;
 
+    public GameObject ActivateIndicator;
+    public GameObject DeactiveIndicator;
+
     //remove NPC? and activate npc on raft
     private void OnTriggerEnter(Collider other)
     {
@@ -36,6 +39,9 @@ public class LastCheck : MonoBehaviour
 
             disableObjectiveText.SetActive(false);
             disableObjectiveText2.SetActive(false);
+
+            ActivateIndicator.SetActive(true);
+            DeactiveIndicator.SetActive(false);
 
         }
     }

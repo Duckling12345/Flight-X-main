@@ -15,8 +15,10 @@ public class VestScript : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     public ObjectiveScript objective;
     public int objectiveID;
     public GameObject activateEnd;
-  //  [SerializeField] Animator transitionAnim;
-   
+    public GameObject ActivateIndicator;
+    public GameObject DeactiveIndicator;
+    //  [SerializeField] Animator transitionAnim;
+
 
 
 
@@ -38,6 +40,8 @@ public class VestScript : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
             disableButton.SetActive(false);
             ExitStopper.SetActive(false);
             activateEnd.SetActive(true);
+            ActivateIndicator.SetActive(true);
+            DeactiveIndicator.SetActive(false);
         }
  
     }

@@ -12,7 +12,9 @@ public class FirstAidScript : MonoBehaviour
     public GameObject activateVest;
     public GameObject disableButton;
     public bool grabPressed;
- 
+
+    public GameObject ActivateIndicator;
+    public GameObject DeactiveIndicator;
 
     void Update()
     {
@@ -21,6 +23,8 @@ public class FirstAidScript : MonoBehaviour
             inactive.SetActive(false);
             active.SetActive(true);
             disableButton.SetActive(false);
+            ActivateIndicator.SetActive(true);
+            DeactiveIndicator.SetActive(false);
         }
     }
 

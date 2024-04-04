@@ -28,6 +28,9 @@ public class ScanScript : MonoBehaviour, IPointerUpHandler, IPointerDownHandler
     public int objectiveID;
     [SerializeField] Animator openDoor;
     public string statetoPlay;
+
+    public GameObject ActivateIndicator;
+    public GameObject DeactivateIndicator;
  
 
     private void Update()
@@ -60,6 +63,8 @@ public class ScanScript : MonoBehaviour, IPointerUpHandler, IPointerDownHandler
 
         // Activate the stand button
         goBackButton.SetActive(true);
+        DeactivateIndicator.SetActive(false);
+
     }
 
     public void Stand()
@@ -83,6 +88,7 @@ public class ScanScript : MonoBehaviour, IPointerUpHandler, IPointerDownHandler
         objectiveText3.SetActive(true);
         scanButton.SetActive(false);
         openDoor.Play(statetoPlay);
+        ActivateIndicator.SetActive(true);
     }
 
     private void OnTriggerExit(Collider other)
