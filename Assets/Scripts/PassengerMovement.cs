@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PassengerMovement : MonoBehaviour
 {
-    private float Gravity = -9.81f;
+    //private float Gravity = -9.81f;
     public float groundDistance = 0.3f;
     public Transform Ground;
     public LayerMask layermask;
