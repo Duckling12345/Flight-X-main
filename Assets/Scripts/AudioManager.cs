@@ -51,13 +51,13 @@ public class AudioManager : MonoBehaviour
         instance = this;
         DontDestroyOnLoad(gameObject);
 
-        SceneManager.sceneLoaded += OnSceneLoaded; //Subscribe from the sceneLoaded event
+        SceneManager.sceneLoaded += OnSceneLoaded; 
 
     }
 
     private void OnDestroy()
     {
-        SceneManager.sceneLoaded -= OnSceneLoaded; //Unsubscribe from the sceneLoaded event
+        SceneManager.sceneLoaded -= OnSceneLoaded; 
     }
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
@@ -154,8 +154,6 @@ public class AudioManager : MonoBehaviour
         source.Stop();
         
     }
-
-
 
     public void PlaySound(AudioClip clip, AudioSource source)
     {

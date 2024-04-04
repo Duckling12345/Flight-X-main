@@ -37,7 +37,7 @@ public class ExtinguisherScript : MonoBehaviour, IPointerDownHandler, IPointerUp
        
         else if (steamObject.activeSelf)
             steamObject.SetActive(false);
-        AudioManager.Instance.PlayExtinguishSound();
+        //AudioManager.Instance.PlayExtinguishSound();
     }
 
     private void ExtinguishFire(FireScript fire)

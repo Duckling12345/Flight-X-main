@@ -13,7 +13,7 @@ public class FireScript : MonoBehaviour
 
     private float[] startIntensities = new float[0];
     float nextRegenTime = 0;
-    AudioSource audioSource;
+    [SerializeField] AudioSource audioSource;
     [SerializeField] private float regenDelay = 2.5f;
     [SerializeField] private float regenRate = .1f;
     

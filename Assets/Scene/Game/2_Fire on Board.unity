@@ -2158,7 +2158,7 @@ Transform:
   m_GameObject: {fileID: 1138766173}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 47.049, y: 5.1241302, z: 43.23}
+  m_LocalPosition: {x: 47.049, y: 5.393, z: 43.877}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5796,7 +5796,7 @@ Transform:
   m_GameObject: {fileID: 856393624414171425}
   serializedVersion: 2
   m_LocalRotation: {x: -0.000000068839384, y: 0.00000006883938, z: -0.7071067, w: 0.7071068}
-  m_LocalPosition: {x: 0.347, y: -0.61763, z: 0.412}
+  m_LocalPosition: {x: 0.347, y: -0.61763, z: 0.573}
   m_LocalScale: {x: 0.24094862, y: 0.2766813, z: 0.24094862}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -26300,7 +26300,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: ea0fb0e38c576aa448e5ecfebe85b3f4, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.25
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -75513,6 +75513,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentIntensity: 1
+  audioSource: {fileID: 199347862590893204}
   regenDelay: 2.5
   regenRate: 0.1
   fireParticleSystems:
