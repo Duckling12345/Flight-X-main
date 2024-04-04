@@ -27861,7 +27861,7 @@ MonoBehaviour:
   disableObjectiveText2: {fileID: 1800440751}
   objective: {fileID: 1825425661}
   objectiveID: 2
-  changeObjectiveText: Inflate the life vest and grab a first aid kit before evacuating.
+  changeObjectiveText: Grab a first aid kit then inflate the life vest before leaving.
   changeObjectiveText1: Evacuate the plane.
   DisableButton: {fileID: 6811448918208387687}
 --- !u!1 &1407007170
