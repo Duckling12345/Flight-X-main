@@ -536,8 +536,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   loadingScreen0: {fileID: 1719094297}
   loadingScreen1: {fileID: 351169792}
-  loadingScreen2: {fileID: 1347850164}
-  loadingScreen3: {fileID: 1272151487}
+  loadingScreen2: {fileID: 1272151487}
+  loadingScreen3: {fileID: 1347850164}
 --- !u!4 &48939099
 Transform:
   m_ObjectHideFlags: 0

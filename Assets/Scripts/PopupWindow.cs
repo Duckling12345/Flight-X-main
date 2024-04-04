@@ -73,7 +73,7 @@ public class PopupWindow : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
         }
         else if (clipPressed && scene.buildIndex == 15)
         {
-            ShowPopup("Level 4 | Water Ditching");
+            ShowPopup("Level 4 | Water Landing");
         }
         else if(clipPressed)
         {
