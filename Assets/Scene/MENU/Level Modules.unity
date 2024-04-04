@@ -4419,8 +4419,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Evacuations are either planned, with time for briefing and preparation,
-    or unplanned, with no time for briefing or preparation.\r"
+  m_text: Water landing is a planned emergency landing on water. Despite its challengers,
+    most landings are successful.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f1d02f8523692b4469f589fabf8e281b, type: 2}
   m_sharedMaterial: {fileID: 3358995831323606883, guid: f1d02f8523692b4469f589fabf8e281b, type: 2}
