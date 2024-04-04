@@ -8,7 +8,7 @@ public class EndScene : MonoBehaviour
     public FireScript fireScript;
     public UnlockDoor sceneMover;
     public ParticleSystem partikol;
-
+    [SerializeField] AudioSource audioSource;
 
     // Update is called once per frame
     void Update()
@@ -21,7 +21,8 @@ public class EndScene : MonoBehaviour
         if (fireScript.isLit == false && numbers == 0)
         {   
             sceneMover.NextLevel();
-            AudioManager.Instance.StopExtinguishSound();
+            audioSource.Stop();
+
         }
     }
     

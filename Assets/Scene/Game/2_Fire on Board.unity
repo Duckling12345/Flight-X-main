@@ -26300,7 +26300,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: ea0fb0e38c576aa448e5ecfebe85b3f4, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.2
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -75513,7 +75513,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentIntensity: 1
-  audioSource: {fileID: 199347862590893204}
   regenDelay: 2.5
   regenRate: 0.1
   fireParticleSystems:
@@ -75599,6 +75598,7 @@ MonoBehaviour:
   fireScript: {fileID: 9149842193823408354}
   sceneMover: {fileID: 1113155878}
   partikol: {fileID: 8949815002408175681}
+  audioSource: {fileID: 199347862590893204}
 --- !u!33 &9153457932929419851
 MeshFilter:
   m_ObjectHideFlags: 0
