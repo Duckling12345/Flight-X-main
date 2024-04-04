@@ -53,16 +53,22 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scene/Game/3_Ditching.unity
     guid: 634e2de16ecb366409024a54839e2090
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scene/Loading/Loading 0.unity
     guid: d489663887cc1564d9d37fad0a9e924d
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scene/Loading/Loading 1.unity
     guid: f176ae282db0cdd4193f90da8ff9883f
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scene/Loading/Loading 2.unity
     guid: 9df072e87c559604cb8c563c8e730dae
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scene/Loading/Loading 3.unity
     guid: 18615dab2b4c0da479a449de048d25b0
+  - enabled: 1
+    path: Assets/Scene/Tutorials/Ditching-Tutorial.unity
+    guid: 323a304bb973e904d8e4584b83f0a6da
+  - enabled: 1
+    path: Assets/Scene/Game/3_QuestionsScene (Ditching).unity
+    guid: 11d1992a16e3a364397dcd8caec1fad5
   m_configObjects: {}
