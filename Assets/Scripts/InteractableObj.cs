@@ -11,6 +11,17 @@ public class InteractableObj : MonoBehaviour, IInteractable
     public GameObject activate;
     public GameObject activateNext;
     public GameObject deactivateCurrent;
+    public FixedButton fixbutton;
+    public ObjectiveScript objectives;
+    public int objectivesID;
+
+    private void Update()
+    {
+        if(fixbutton.Pressed == true && objectives.objectivesDone == objectivesID) 
+        { 
+            Interact();
+        }
+    }
     public void Interact()
     {
         activate.SetActive(true);

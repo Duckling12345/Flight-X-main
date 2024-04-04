@@ -20,7 +20,7 @@ public class NPCScript : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     public GameObject objectiveText2;
     public GameObject obstacle;
     private GameOverManager gameOver;
-
+    public GameObject removeImage;
 
     void Start()
     {
@@ -69,7 +69,7 @@ public class NPCScript : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
         this.GetComponent<BoxCollider>().enabled = false;
         talkButton.SetActive(false);
         ConversationManager.Instance.EndConversation();
-
+        removeImage.SetActive(false);
     }
 
     void IPointerDownHandler.OnPointerDown(PointerEventData eventData)

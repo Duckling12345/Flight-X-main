@@ -142,6 +142,21 @@ public class AudioManager : MonoBehaviour
         PlaySound(buckleSound, sfxSource);
     }
 
+
+    public void StopExtinguishSound()
+    {
+        StopSound(extinguishSound);
+    }
+    public void StopSound(AudioClip clip)
+    {
+        clip = extinguishSound;
+        AudioSource source = sfxSource;
+        source.Stop();
+        
+    }
+
+
+
     public void PlaySound(AudioClip clip, AudioSource source)
     {
         if (clip != null && source != null)

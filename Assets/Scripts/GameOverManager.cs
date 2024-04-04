@@ -34,7 +34,7 @@ public class GameOverManager : MonoBehaviour
     {
         GameOverMenu.SetActive(true);
         PlayerUI.SetActive(false);
-        AudioManager.Instance.PlayFailedSound();
+            
     }
 
    public void Retry()

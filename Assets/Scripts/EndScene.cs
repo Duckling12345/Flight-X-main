@@ -21,6 +21,7 @@ public class EndScene : MonoBehaviour
         if (fireScript.isLit == false && numbers == 0)
         {   
             sceneMover.NextLevel();
+            AudioManager.Instance.StopExtinguishSound();
         }
     }
     

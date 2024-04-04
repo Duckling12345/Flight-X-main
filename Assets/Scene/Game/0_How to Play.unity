@@ -867,6 +867,7 @@ MonoBehaviour:
   objectiveText1: {fileID: 452357587}
   objectiveText2: {fileID: 384229296}
   obstacle: {fileID: 5233112405622865500}
+  removeImage: {fileID: 1136556288}
 --- !u!1001 &51804604
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8204,7 +8205,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &797929122
 Transform:
   m_ObjectHideFlags: 0
@@ -9015,8 +9016,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1218.9216, y: 669.8859, z: 1262.6544}
-  m_Center: {x: 298.61456, y: -52.19522, z: 19.897505}
+  m_Size: {x: 1464.3392, y: 1588.32, z: 1262.6544}
+  m_Center: {x: 421.32346, y: -154.4261, z: 19.897503}
 --- !u!64 &873026628
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -10474,7 +10475,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1044197159
 Transform:
   m_ObjectHideFlags: 0
@@ -11360,6 +11361,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 54a5a73a68f629e4f98e976f68422762, type: 3}
+--- !u!1 &1136556288 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 423455539150551263, guid: 54a5a73a68f629e4f98e976f68422762, type: 3}
+  m_PrefabInstance: {fileID: 1136556287}
+  m_PrefabAsset: {fileID: 0}
 --- !u!64 &1139731782
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -61419,6 +61425,9 @@ MonoBehaviour:
   activate: {fileID: 1431952209}
   activateNext: {fileID: 2108025825}
   deactivateCurrent: {fileID: 171559825}
+  fixbutton: {fileID: 2749211638836227824}
+  objectives: {fileID: 1044197160}
+  objectivesID: 1
 --- !u!1 &5007767762203829556
 GameObject:
   m_ObjectHideFlags: 0
@@ -65275,8 +65284,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 984.6609, y: 669.8859, z: 1163.3582}
-  m_Center: {x: -223.17653, y: -52.20303, z: -29.751451}
+  m_Size: {x: 1764.8623, y: 1281.4248, z: 1163.3584}
+  m_Center: {x: -613.2772, y: -32.79508, z: -29.75145}
 --- !u!114 &5532807414968636710
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -65293,6 +65302,9 @@ MonoBehaviour:
   activate: {fileID: 1431952209}
   activateNext: {fileID: 1399343862}
   deactivateCurrent: {fileID: 2108025825}
+  fixbutton: {fileID: 2749211638836227824}
+  objectives: {fileID: 1044197160}
+  objectivesID: 2
 --- !u!114 &5532807414968636711
 MonoBehaviour:
   m_ObjectHideFlags: 0

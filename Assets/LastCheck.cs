@@ -20,7 +20,7 @@ public class LastCheck : MonoBehaviour
     public string changeObjectiveText1;
     public GameObject DisableButton;
 
-
+    //remove NPC? and activate npc on raft
     private void OnTriggerEnter(Collider other)
     {
 

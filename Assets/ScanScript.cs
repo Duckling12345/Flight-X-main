@@ -26,6 +26,8 @@ public class ScanScript : MonoBehaviour, IPointerUpHandler, IPointerDownHandler
     public TMP_Text objectiveText2;
     public ObjectiveScript objective;
     public int objectiveID;
+    [SerializeField] Animator openDoor;
+    public string statetoPlay;
  
 
     private void Update()
@@ -77,10 +79,10 @@ public class ScanScript : MonoBehaviour, IPointerUpHandler, IPointerDownHandler
 
         Activate.SetActive(true);
         defaultObject.SetActive(false);
-        door.SetActive(false);
         goBackButton.SetActive(false);
         objectiveText3.SetActive(true);
         scanButton.SetActive(false);
+        openDoor.Play(statetoPlay);
     }
 
     private void OnTriggerExit(Collider other)

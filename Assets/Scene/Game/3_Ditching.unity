@@ -19860,6 +19860,7 @@ GameObject:
   - component: {fileID: 1000881757}
   - component: {fileID: 1000881758}
   - component: {fileID: 1000881759}
+  - component: {fileID: 1000881760}
   m_Layer: 0
   m_Name: plane body.004
   m_TagString: Untagged
@@ -19876,7 +19877,7 @@ Transform:
   m_GameObject: {fileID: 1000881752}
   serializedVersion: 2
   m_LocalRotation: {x: -0.6932671, y: 0.10891645, z: -0.09243872, w: 0.70638025}
-  m_LocalPosition: {x: 6.996765, y: -16.784729, z: -23.331604}
+  m_LocalPosition: {x: 6.996765, y: -16.78473, z: -23.331604}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -20019,6 +20020,8 @@ MonoBehaviour:
   objectiveText2: {fileID: 484786697}
   objective: {fileID: 1825425661}
   objectiveID: 1
+  openDoor: {fileID: 1000881760}
+  statetoPlay: DitchingOpen
 --- !u!114 &1000881759
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20033,6 +20036,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InteractButton: {fileID: 1316225650}
   DestroyOnExit: {fileID: 1000881752}
+--- !u!95 &1000881760
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000881752}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c682c721e72717d4c9b8f74fb9850cc0, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1002282343
 GameObject:
   m_ObjectHideFlags: 0
