@@ -495,8 +495,8 @@ RectTransform:
   - {fileID: 894964558}
   - {fileID: 633591695}
   - {fileID: 1719094298}
-  - {fileID: 1347850165}
   - {fileID: 351169793}
+  - {fileID: 1347850165}
   - {fileID: 1272151488}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -535,8 +535,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   loadingScreen0: {fileID: 1719094297}
-  loadingScreen1: {fileID: 1347850164}
-  loadingScreen2: {fileID: 351169792}
+  loadingScreen1: {fileID: 351169792}
+  loadingScreen2: {fileID: 1347850164}
   loadingScreen3: {fileID: 1272151487}
 --- !u!4 &48939099
 Transform:
@@ -1414,7 +1414,7 @@ GameObject:
   m_Component:
   - component: {fileID: 351169793}
   m_Layer: 5
-  m_Name: Loading3
+  m_Name: Loading 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1722,7 +1722,7 @@ GameObject:
   - component: {fileID: 490679321}
   - component: {fileID: 490679320}
   m_Layer: 5
-  m_Name: FOB Title
+  m_Name: LOP Title
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3326,7 +3326,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: PRE FLIGHT CHECKING
+  m_text: PRE-FLIGHT CHECKING
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8b69cb9661d59a440b3bc9e0ff1eab8a, type: 2}
   m_sharedMaterial: {fileID: 5767788990938898048, guid: 8b69cb9661d59a440b3bc9e0ff1eab8a, type: 2}
@@ -3415,7 +3415,7 @@ GameObject:
   - component: {fileID: 1241266813}
   - component: {fileID: 1241266812}
   m_Layer: 5
-  m_Name: WD Title
+  m_Name: WL Title
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3697,7 +3697,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1272151488}
   m_Layer: 5
-  m_Name: Loading4
+  m_Name: Loading 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3905,7 +3905,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1347850165}
   m_Layer: 5
-  m_Name: Loading1
+  m_Name: Loading 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5121,7 +5121,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1719094298}
   m_Layer: 0
-  m_Name: Loading 0
+  m_Name: Loading 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6488,8 +6488,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: The higher the aircraft flies, the higher the pressure differential that
-    needs to be maintained and the higher the stress on the aircraft structure.
+  m_text: The higher the aircraft flies, the higher the pressure differential should
+    be maintained. It puts stress on the aircraft structure.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f1d02f8523692b4469f589fabf8e281b, type: 2}
   m_sharedMaterial: {fileID: 3358995831323606883, guid: f1d02f8523692b4469f589fabf8e281b, type: 2}
