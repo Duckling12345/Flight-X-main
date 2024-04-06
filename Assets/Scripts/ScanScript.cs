@@ -36,12 +36,12 @@ public class ScanScript : MonoBehaviour, IPointerUpHandler, IPointerDownHandler
     {
         if (fixedscanbutton.Pressed && objective.objectivesDone == objectiveID)
         {
-            objectiveText2.color = new Color32(0xC0, 0xC0, 0xC0, 0xFF);
+            objectiveText1.color = new Color32(0xC0, 0xC0, 0xC0, 0xFF);
             Sit();
         }
         else if (fixedBackbutton.Pressed && objective.objectivesDone == objectiveID)
         {
-            objectiveText1.color = new Color32(0xC0, 0xC0, 0xC0, 0xFF);
+            objectiveText2.color = new Color32(0xC0, 0xC0, 0xC0, 0xFF);
             Stand();
         }
     }

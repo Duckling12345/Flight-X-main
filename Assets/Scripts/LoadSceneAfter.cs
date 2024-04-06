@@ -8,7 +8,6 @@ public class LoadSceneAfter : MonoBehaviour
 {
 
     private VideoPlayer player;
-
     public int buildIndex;
 
     private void Awake() 
