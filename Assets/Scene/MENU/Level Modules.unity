@@ -4419,7 +4419,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Water landing is a planned emergency landing on water. Despite its challengers,
+  m_text: Water landing is a planned emergency landing on water. Despite its challenges,
     most landings are successful.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f1d02f8523692b4469f589fabf8e281b, type: 2}

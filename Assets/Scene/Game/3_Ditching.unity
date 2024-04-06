@@ -4639,7 +4639,7 @@ Transform:
   m_GameObject: {fileID: 187312992}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7300067, y: -0.0007894748, z: -0.0041730916, w: 0.6834268}
-  m_LocalPosition: {x: 0.29, y: -3.27, z: 0.47}
+  m_LocalPosition: {x: -0.14, y: -3.3, z: 0.44}
   m_LocalScale: {x: 326.64743, y: 429.02832, z: 353.81012}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -13347,7 +13347,7 @@ Transform:
   m_GameObject: {fileID: 696818870}
   serializedVersion: 2
   m_LocalRotation: {x: -0.000000068839384, y: 0.000000068839384, z: -0.7071067, w: 0.7071068}
-  m_LocalPosition: {x: 0.45244843, y: -3.0218868, z: 0.28360307}
+  m_LocalPosition: {x: 0.46, y: -3.12, z: 1.86}
   m_LocalScale: {x: 350.96957, y: 466.0525, z: 350.96957}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -20784,7 +20784,6 @@ MonoBehaviour:
   objectiveID: 1
   openDoor: {fileID: 1000881760}
   statetoPlay: DitchingOpen
-  playsound: {fileID: 0}
   ActivateIndicator: {fileID: 237376664}
   DeactivateIndicator: {fileID: 1299040163}
 --- !u!114 &1000881759
