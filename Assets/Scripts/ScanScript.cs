@@ -31,7 +31,6 @@ public class ScanScript : MonoBehaviour, IPointerUpHandler, IPointerDownHandler
 
     public GameObject ActivateIndicator;
     public GameObject DeactivateIndicator;
- 
 
     private void Update()
     {
@@ -89,6 +88,7 @@ public class ScanScript : MonoBehaviour, IPointerUpHandler, IPointerDownHandler
         scanButton.SetActive(false);
         openDoor.Play(statetoPlay);
         ActivateIndicator.SetActive(true);
+        AudioManager.Instance.PlayDoorSound();
     }
 
     private void OnTriggerExit(Collider other)

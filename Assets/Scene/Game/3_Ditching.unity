@@ -20784,6 +20784,7 @@ MonoBehaviour:
   objectiveID: 1
   openDoor: {fileID: 1000881760}
   statetoPlay: DitchingOpen
+  playsound: {fileID: 0}
   ActivateIndicator: {fileID: 237376664}
   DeactivateIndicator: {fileID: 1299040163}
 --- !u!114 &1000881759

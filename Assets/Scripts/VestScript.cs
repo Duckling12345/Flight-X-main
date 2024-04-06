@@ -47,6 +47,7 @@ public class VestScript : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
             transitionAnim.Play(stateName);
             WearVest.SetActive(true);
             activateObject.SetActive(true);
+            AudioManager.Instance.PlayInspectSound();
         }
  
     }
