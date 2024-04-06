@@ -6,11 +6,12 @@ public class ExitScene : MonoBehaviour
 {
     public GameObject disableButton;
     public UnlockDoor nextScene;
-    
+    public GameObject disableTimer;
 
     private void OnTriggerEnter(Collider other)
     {
         disableButton.SetActive(false);
         nextScene.NextLevel();
+        disableTimer.SetActive(false);
     }
 }

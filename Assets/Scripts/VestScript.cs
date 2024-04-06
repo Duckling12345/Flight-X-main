@@ -17,8 +17,10 @@ public class VestScript : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     public GameObject activateEnd;
     public GameObject ActivateIndicator;
     public GameObject DeactiveIndicator;
-    //  [SerializeField] Animator transitionAnim;
-
+    public GameObject WearVest;
+    public GameObject activateObject;
+    [SerializeField] Animator transitionAnim;
+    public string stateName;
 
 
 
@@ -42,6 +44,9 @@ public class VestScript : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
             activateEnd.SetActive(true);
             ActivateIndicator.SetActive(true);
             DeactiveIndicator.SetActive(false);
+            transitionAnim.Play(stateName);
+            WearVest.SetActive(true);
+            activateObject.SetActive(true);
         }
  
     }

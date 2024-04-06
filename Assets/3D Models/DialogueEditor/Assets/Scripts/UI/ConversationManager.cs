@@ -160,6 +160,7 @@ namespace DialogueEditor
 
             if (OnConversationEnded != null)
                 OnConversationEnded.Invoke();
+
         }
 
         public void SelectNextOption()

@@ -40,7 +40,7 @@ public class NPCScript : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
             ConversationManager.Instance.StartConversation(myConversation);
             ShowText();
             RemoveText();
-            
+            removeImage.SetActive(true);
         }
     }
 
@@ -66,7 +66,6 @@ public class NPCScript : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     //temporary fix
     private void OnTriggerExit(Collider other)
     {
-        this.GetComponent<BoxCollider>().enabled = false;
         talkButton.SetActive(false);
         ConversationManager.Instance.EndConversation();
         removeImage.SetActive(false);

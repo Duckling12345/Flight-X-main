@@ -22,8 +22,8 @@ public class LastCheck : MonoBehaviour
 
     public GameObject ActivateIndicator;
     public GameObject DeactiveIndicator;
-
-    //remove NPC? and activate npc on raft
+    public GameObject removeNPC;
+    
     private void OnTriggerEnter(Collider other)
     {
 
@@ -43,6 +43,7 @@ public class LastCheck : MonoBehaviour
             ActivateIndicator.SetActive(true);
             DeactiveIndicator.SetActive(false);
 
+            removeNPC.SetActive(false);
         }
     }
 }
