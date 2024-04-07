@@ -4,8 +4,7 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Cube
-  - Mask
+  - NPC
   layers:
   - Default
   - TransparentFX

@@ -1,25 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class PassengerMovement : MonoBehaviour
 {
-    //private float Gravity = -9.81f;
-    public float groundDistance = 0.3f;
-    public Transform Ground;
-    public LayerMask layermask;
-    Vector3 velocity;
-    public bool isGround;
-    public Animator Animation;
+    [SerializeField] private Transform movePositionTransform;
+    private NavMeshAgent navMeshagent;
+
+    private void Awake()
+    {
+       navMeshagent = GetComponent<NavMeshAgent>(); 
+    }
 
     public void Update()
     {
-        isGround = Physics.CheckSphere(Ground.position, groundDistance, layermask);
-
-        if (isGround && velocity.y < 0)
-        {
-            velocity.y = -2f;
-        }
-        Animation.Play("Evacuation (Passengers)");
+       navMeshagent.destination = movePositionTransform.position;
     }
 }
