@@ -88,7 +88,7 @@ public class ScanScript : MonoBehaviour, IPointerUpHandler, IPointerDownHandler
         scanButton.SetActive(false);
         openDoor.Play(statetoPlay);
         ActivateIndicator.SetActive(true);
-        AudioManager.Instance.PlayDoorSound();
+        //AudioManager.Instance.PlayDoorSound();
     }
 
     private void OnTriggerExit(Collider other)
